@@ -18,9 +18,3 @@ def renew_connection():
     conn = TorCtl.connect(controlAddr="127.0.0.1", controlPort=9051, passphrase="your_password")
     conn.send_signal("NEWNYM")
     conn.close()
-
-for i in range(0, 10):
-    renew_connection()
-    print request("http://icanhazip.com/")
-    #print request("http://xmh57jrzrnw6insl.onion")
-    print request("http://2222ppclgy2amp23.onion/")
