@@ -2,7 +2,13 @@
 from ip_renew import *
 from bs4 import BeautifulSoup
 import re
+from py2neo import authenticate, Graph, Path, Node, Relationship
+authenticate("localhost:7474", "neo4j","password")
+graph = Graph("http://localhost:7474/db/data")
 
+website = "Oday-test"
+website_node = Node("Website", name=website)
+graph.create(website_node)
 renew_connection()
 #print request("http://icanhazip.com/")
 #print request("http://xmh57jrzrnw6insl.onion")
@@ -64,15 +70,4 @@ for key in authornodes.keys():
 	print 'Author '+ str(key)
 	for value in temp.keys():
 		print value + " : \t" + str(temp.get(value))
-	#print soup.title.string
-	#all_links=soup.find_all('a')
-	#for link in all_links:
-		#print link.get("href")
-#print website.header_items()
-#found = soup.findAll("a",{"style": "font-weight:bold;"})[0].string
-#for link in soup.findAll('a', href=True):
-#    #print "Found URL is: %s"%link['href']
-#    print "For topic %s"%link.string
-    #print link.string
-#found2 = soup.findAll("a",{"style": "font-weight:bold;"})[0].string
-#print found
+		author_name = str(temp.get(Author))
