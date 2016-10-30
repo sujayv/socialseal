@@ -43,14 +43,14 @@ for i in range(1,10):
 	authornodes.update(finaltable)
 	exploitdetails = soup.find_all('div',class_='ExploitTableContent')
 #####Printing the author description table####
-"""for key in authornodes.keys():
+for key in authornodes.keys():
 	print "***********************"
 	temp = authornodes.get(key)
 	print 'Author '+ str(key)
 	for value in temp.keys():
-<<<<<<< HEAD
 		print value + " : \t" + str(temp.get(value))
-		author_name = str(temp.get(Author))
-=======
-		print value + " : \t" + str(temp.get(value))"""
->>>>>>> f70e67b87d2daa1b07fe48aea3ac39cfc97b7d73
+		author_name = str(temp.get("Author"))
+		author_node = Node("author",name=author_name)
+		graph.create(author_node)
+		graph.create(Relationship(website_node,"has_author",author_node))
+		print value + " : \t" + str(temp.get(value))
