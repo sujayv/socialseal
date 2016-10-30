@@ -1,0 +1,2844 @@
+INFO[Mon Oct 17 19:35:05 2016]:Event loop received close message.
+INFO[Mon Oct 17 19:35:44 2016]:Event loop received close message.
+INFO[Mon Oct 17 19:38:44 2016]:Event loop received close message.
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>0day.today Inj3ct0r Exploit Database : vulnerability : 0day : new exploits : buy and sell private exploit : shellcode by Inj3ct0r Team</title>
+<meta content="1337day Inj3ct0r Exploit Database - Exploits market provides you the possibility to buy zero-day exploits and also to sell 0day exploits. Here you can find exploits by categories such as: remote exploits, local exploits, webapplications exploits, dos \ poc, shellcodes  and many critical vulnerabilities. Also you can find Windows exploits, Linux exploits, Mac OS exploits, Freebsd exploits, kernel exploits, root exploits, Android exploits. If you need to order penetration test of your server or site please contact us too." name="description"/>
+<meta content="" name="keywords"/>
+<link href="/style?1476758343" media="all" rel="stylesheet" type="text/css"/>
+<link href="/skin/green?1476758343" media="all" rel="stylesheet" type="text/css"/>
+<link href="/qtip_style" media="all" rel="stylesheet" type="text/css"/>
+<link href="/fancybox_style" rel="stylesheet"/>
+<script src="/jquery" type="text/javascript"></script>
+<script src="/qtip_js" type="text/javascript"></script>
+<script src="/js?1476758343" type="text/javascript"></script>
+<script src="/upl1" type="text/javascript"></script>
+<script src="/upl2" type="text/javascript"></script>
+<script src="/fancybox" type="text/javascript"></script>
+<script src="/chart_js"></script>
+<script type="text/javascript">
+			$(document).ready(function() {
+				$('.popup').fancybox({
+					fitToView	: true,
+					autoSize	: true,
+					closeClick	: false,
+					
+					openEffect	: 'elastic',
+					closeEffect	: 'elastic'
+				});
+				$('.popup_modal').fancybox({
+					modal	: true, 
+					width   : '100%',
+					height  : '100%',
+					fitToView	: true,
+					autoSize	: false,
+					closeClick	: false,
+					
+					openEffect	: 'elastic',
+					closeEffect	: 'elastic'
+				});
+			});
+		</script>
+<script type="text/javascript">
+			  var _gaq = _gaq || [];
+			  _gaq.push(['_setAccount', 'UA-23466659-1']);
+			  _gaq.push(['_trackPageview']);
+			  (function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			  })();
+		</script>
+</head>
+<body onload="onloadpage()"><div class="menu" style="text-align:center; width:1200px;">[ <a href="/">home</a> ]  [ <a class="" href="/private">private</a> ]  [ <a class="RedText" href="/0day">0Day</a> ]  [ <a class="YellowTextGold" href="/gold"> Get Gold </a> ]  [ <a href="/platforms">platforms</a> ]  [ <a href="/shellcodes">shellcode</a> ]  [ <a href="/pentest">pentest</a> ]  [ <a href="/hash">hash</a> ]  [ <a href="/search">search</a> ]  [ <a class="RedText" href="/faq">faq</a> ]  [ <a href="/agree">agreement</a> ]  [ <a href="/contacts">contact</a> ]  [ <a href="/style/change">style</a> ]   <span class="YellowText">db:</span> <span class="RedText">25 826</span>    <div class="menu_icon"><a href="http://www.facebook.com/inj3ct0rs" target="_Blank" title="Inj3ct0r Exploit DB Official Facebook"><img alt="Inj3ct0r Exploit DB Official Facebook" src="/img/fb.png"/></a></div> <div class="menu_icon"><a href="http://twitter.com/inj3ct0r" target="_Blank" title="Inj3ct0r Exploit DB Official Twitter "><img alt="Inj3ct0r Exploit DB Official Twitter " src="/img/tw.png"/></a></div> <div class="menu_icon"><a href="https://plus.google.com/u/0/107820191285834412808/" target="_Blank" title="Inj3ct0r Exploit DB Official Google Plus"><img alt="Inj3ct0r Exploit DB Official Google Plus" src="/img/gp.png"/></a></div> <div class="menu_icon"><a href="/rss" target="_Blank" title="Inj3ct0r Exploit DB Official RSS Channel"><img alt="Inj3ct0r Exploit DB Official RSS Channel" src="/img/rss.png"/></a></div>  <div class="menu_icon"><a href="/content" title="Inj3ct0r Exploit DB Sitemap"><img alt="Inj3ct0r Exploit DB Sitemap" src="/img/sitemap_green.png"/></a></div> </div><div class="content">
+<div class="popup_welcome " id="popup_welcome_div">
+<a class="popup" href="#popup_welcome_div" id="popup_welcome"> </a>
+<div class="pop_up_welcome_title">
+<strong><span class="RedText">0day.today - Biggest Exploit Database in the World.</span></strong>
+<div style="float:right; margin-top:-5px; heigth:24px; line-height:16px; ">
+<div style="float:left; margin-top:3px;">Select your language:  </div>
+<a class="" href="http://en.0day.today/">
+<img alt="English" src="/img/langs/en.png"/>
+<div class="TipText">
+									English
+								</div>
+</a><a class="" href="http://ru.0day.today/">
+<img alt="Русский" src="/img/langs/ru.png"/>
+<div class="TipText">
+									Русский
+								</div>
+</a><a class="" href="http://de.0day.today/">
+<img alt="Deutsch" src="/img/langs/de.png"/>
+<div class="TipText">
+									Deutsch
+								</div>
+</a><a class="" href="http://tr.0day.today/">
+<img alt="Türkçe" src="/img/langs/tr.png"/>
+<div class="TipText">
+									Türkçe
+								</div>
+</a><a class="" href="http://fr.0day.today/">
+<img alt="Français" src="/img/langs/fr.png"/>
+<div class="TipText">
+									Français
+								</div>
+</a><a class="" href="http://it.0day.today/">
+<img alt="Italiano" src="/img/langs/it.png"/>
+<div class="TipText">
+									Italiano
+								</div>
+</a><a class="" href="http://es.0day.today/">
+<img alt="Español" src="/img/langs/es.png"/>
+<div class="TipText">
+									Español
+								</div>
+</a><a class="" href="http://ro.0day.today/">
+<img alt="Romania" src="/img/langs/ro.png"/>
+<div class="TipText">
+									Romania
+								</div>
+</a><a class="" href="http://pl.0day.today/">
+<img alt="Polskie" src="/img/langs/pl.png"/>
+<div class="TipText">
+									Polskie
+								</div>
+</a><a class="" href="http://ar.0day.today/">
+<img alt="العربية" src="/img/langs/ar.png"/>
+<div class="TipText">
+									العربية
+								</div>
+</a><a class="" href="http://jp.0day.today/">
+<img alt="Japan" src="/img/langs/jp.png"/>
+<div class="TipText">
+									Japan
+								</div>
+</a><a class="" href="http://cn.0day.today/">
+<img alt="China" src="/img/langs/cn.png"/>
+<div class="TipText">
+									China
+								</div>
+</a>
+</div>
+</div>
+<div style="float:left; background:#000; width:480px; border-right:1px solid #004000; text-align:justify; margin:10px 0px 0px 0px; padding:0px 15px 0px 0px;">
+<div class="centertext"><img src="/img/logo_green.jpg" style="width:400px;"/></div>
+<div class="spacer"></div>
+						Things you should know about 0day.today: 
+						<ul>
+<li>We use one main domain: <a href="http://0day.today">http://0day.today</a></li>
+<li>Most of the materials is <span class="YellowText">completely FREE</span></li>
+<li>If you want to <span class="RedText">purchase the exploit</span> / <span class="RedText">get V.I.P. access</span>  or pay for any other service, <br/>you need to buy or earn <img src="/img/gold.gif"/> <span class="GoldText">GOLD</span></li>
+</ul>
+<div class="spacer"></div>
+<div class="center">
+							We accept currencies: [<a href="/contacts" target="_blank">contact admin to find more</a>]
+							<div class="half_spacer"></div>
+<a href="/gold"><img src="/img/money/btc_big.png"/></a>   
+							<a href="/gold"><img src="/img/money/litecoin_big.png"/></a>   
+							<a href="/gold"><img src="/img/money/perfect_big.png"/></a>   
+							<a href="/gold"><img src="/img/money/wm_big.png"/></a>
+<div class="spacer"></div>
+<a href="/gold"><img src="/img/money/wu_big.png"/></a>   
+							<a href="/gold"><img src="/img/money/okpay_big.png"/></a>   
+							<a href="/gold"><img src="/img/money/btc_big.png"/></a>   
+							<a href="/gold"><img src="/img/money/qiwi_big.png"/></a>
+<div class="spacer"></div>
+<a href="/gold"><img src="/img/money/vm_big.png"/></a>   
+							<a href="/gold"><img src="/img/money/moneygram_big.png"/></a>   
+							<a href="/gold"><img src="/img/money/payeer_big.png"/></a>   
+							<a href="/gold"><img src="/img/money/dogecoin_big.png"/></a>
+</div>
+<div class="spacer"></div>
+<div class="spacer"></div>
+						We don't want you to use our site as a tool for hacking purposes, so any kind of action that could 
+			affect illegaly other users or websites that you don't have right to access will be banned 
+			and your account including your data will be destroyed.<br/><br/>
+			Administration of this site uses the <a href="/contacts" target="_blank">official contacts</a>. Beware of impostors!
+						<div class="spacer"></div>
+<div class="spacer"></div>
+<div class="centertext"><a class="RedText" href="/popup/off">I am registered user of 0day.today. I don't want to see this screen in future.</a></div>
+</div>
+<div style="float:left; background:#000; width:300px; padding:10px 0px;">
+<center><strong><span class="RedText">What to do first?</span></strong></center>
+<ol style="margin-left:25px;">
+<li>Read the [ <a href="/law" target="_blank">agreement</a> ]</li>
+<li>Read the [ <a href="/faq/how_publish" target="_blank">Submit</a> ] rules</li>
+<li>Visit the [ <a href="/faq" target="_blank">faq</a> ] page</li>
+<li>[ <a href="/reg" target="_blank">Register</a> ] profile</li>
+<li>Get [ <a href="/gold" target="_blank">GOLD</a> ]</li>
+<li>If you want to [ <a href="/faq/sell" target="_blank">sell</a> ]</li>
+<li>If you want to [ <a href="/faq/buy" target="_blank">buy</a> ]</li>
+<li>If you lost [ <a href="restore" target="_blank">Account</a> ]</li>
+<li>Any questions [ <a href="mailto:admin@0day.today">admin@0day.today</a> ]</li>
+</ol>
+<br/>
+<br/>
+<center><strong><span class="RedText">Main links</span></strong></center>
+<ul style="margin-left:25px;">
+<li><a href="/auth">Authorisation page</a></li>
+<li><a href="/reg">Registration page</a></li>
+<li><a href="/restore">Restore account page</a></li>
+<li><a href="/faq">FAQ page</a></li>
+<li><a href="/contacts">Contacts page</a></li>
+<li><a href="/faq#submit">Publishing rules</a></li>
+<li><a href="/law">Agreement page</a></li>
+</ul>
+<br/>
+<br/>
+<center><strong><span class="RedText">You can contact us by</span></strong></center><br/>
+<div class="popup_contacts_items popup_contacts_mail">
+<div class="popup_contacts_items_title ">Mail:</div>
+<div class="popup_contacts_items_text"><a href="mailto:mr.inj3ct0r@gmail.com">mr.inj3ct0r@gmail.com</a></div>
+</div>
+<div class="popup_contacts_items popup_contacts_jabber">
+<div class="popup_contacts_items_title ">Jabber:</div>
+<div class="popup_contacts_items_text">1337day@jabber.org</div>
+</div>
+<div class="popup_contacts_items popup_contacts_skype">
+<div class="popup_contacts_items_title ">Skype:</div>
+<div class="popup_contacts_items_text">Inj3ct0rs</div>
+</div>
+<div class="popup_contacts_items popup_contacts_fb">
+<div class="popup_contacts_items_title ">Facebook:</div>
+<div class="popup_contacts_items_text"><a href="http://www.facebook.com/inj3ct0rs" target="_blank">Inj3ct0rs</a></div>
+</div>
+<div class="popup_contacts_items popup_contacts_twitter">
+<div class="popup_contacts_items_title ">Twitter:</div>
+<div class="popup_contacts_items_text"><a href="https://twitter.com/inj3ct0r" target="_blank">Inj3ct0r</a></div>
+</div>
+</div>
+</div>
+<div class="head_auth">
+<div class="menu_icon"><img src="/img/lock.png"/></div> 
+				[ <a class="RedText" href="/auth">authorization</a> ] 
+				[ <a class="RedText" href="/reg">registration</a> ] 
+				[ <a class="RedText" href="/restore">restore account</a> ] 
+			</div>
+<div class="head_contacts RedText">
+<a class="popup" href="#contacts_popup">
+				Contact us: 
+				<img src="/img/skype.png"/>
+<img src="/img/jabber.png"/>
+<img src="/img/mail.png"/>
+</a>
+</div>
+<div id="contacts_popup">
+<div class="category_text strong"><span class="RedText">You can contact us by:</span> </div>
+<div class="popup_contacts_page">
+<div class="popup_contacts_items popup_contacts_mail">
+<div class="popup_contacts_items_title YellowText">Mail:</div>
+<div class="popup_contacts_items_text"><a href="mailto:mr.inj3ct0r@gmail.com">mr.inj3ct0r@gmail.com</a></div>
+</div>
+<div class="popup_contacts_items popup_contacts_jabber">
+<div class="popup_contacts_items_title YellowText">Jabber:</div>
+<div class="popup_contacts_items_text">1337day@jabber.org</div>
+</div>
+<div class="popup_contacts_items popup_contacts_skype">
+<div class="popup_contacts_items_title YellowText">Skype:</div>
+<div class="popup_contacts_items_text">Inj3ct0rs</div>
+</div>
+<div class="popup_contacts_items popup_contacts_fb">
+<div class="popup_contacts_items_title ">Facebook:</div>
+<div class="popup_contacts_items_text"><a href="http://www.facebook.com/inj3ct0rs" target="_blank">Inj3ct0rs</a></div>
+</div>
+<div class="popup_contacts_items popup_contacts_twitter">
+<div class="popup_contacts_items_title ">Twitter:</div>
+<div class="popup_contacts_items_text"><a href="https://twitter.com/inj3ct0r" target="_blank">Inj3ct0r</a></div>
+</div>
+</div>
+</div>
+<div class="head">
+<div class="double_spacer"></div>
+<div class="double_spacer"></div>
+<img alt="0day Today Inj3ct0r Exploits Market and 0day Exploits Database" src="/img/logo_green.jpg"/>
+<div class="double_spacer"></div>
+<div class="SmallYellowText">
+						Inj3ct0r is the ultimate database of exploits and vulnerabilities and a great resource for vulnerability researchers and security professionals.
+				<br/>Our aim is to collect exploits from submittals and various mailing lists and concentrate them in one, easy-to-navigate database.
+				<br/>This was written solely for educational purposes. Use it at your own risk. 
+				The author will be not responsible for any damage. // r0073r
+                                <br/><br/>0day.today Available within TOR at <span style="color: #9932CC;">http://mvfjfugdwgc5uwho.onion</span>
+</div>
+<div class="double_spacer"></div>
+</div>
+<div class="slider">
+<div class="slider_control_left control" id="leftControl"></div>
+<div class="slider_container" id="slidesContainer"><div class="slide">
+<div class="slider_title">
+<h2 class="YellowText"><img src="/img/price_tag.png"/> How to buy exploit? Two ways to buy required exploit. Currency, that we accept.</h2>
+</div>
+<div class="spacer"></div>
+<div class="slide_block">
+<ol>
+<li><span class="YellowText">Anonymous buying of exploits</span> is the way to buy exploit without registration. You buy it directly and anonymous and get exploit on mail.</li>
+</ol>
+</div>
+<div class="slide_block">
+<ol start="2">
+<li>Another <span class="YellowText">way to buy exploits is to became 0day.today 1337day user</span>, get <span class="GoldText">0day.today 1337day Gold</span> <img src="/img/gold.gif"/> and buy required exploit in our database.</li>
+</ol>
+</div>
+<div class="clear"></div>
+<div class="center">
+											We accept currencies: [<a href="/contacts" target="_blank">contact admin to find more</a>]
+											<div class="half_spacer"></div>
+<a href="/gold"><img src="/img/money/btc_big.png"/></a>   
+											<a href="/gold"><img src="/img/money/litecoin_big.png"/></a>   
+											<a href="/gold"><img src="/img/money/perfect_big.png"/></a>   
+											<a href="/gold"><img src="/img/money/wm_big.png"/></a>   
+											<a href="/gold"><img src="/img/money/wu_big.png"/></a>   
+											<a href="/gold"><img src="/img/money/okpay_big.png"/></a>   
+											<a href="/gold"><img src="/img/money/btce_big.png"/></a>   
+											<br/>
+<br/>
+<a href="/gold"><img src="/img/money/vm_big.png"/></a>   
+											<a href="/gold"><img src="/img/money/qiwi_big.png"/></a>   
+											<a href="/gold"><img src="/img/money/moneygram_big.png"/></a>   
+											<a href="/gold"><img src="/img/money/payeer_big.png"/></a>   
+											<a href="/gold"><img src="/img/money/dogecoin_big.png"/></a>   
+										</div>
+</div><div class="slide">
+<div class="slider_title">
+<h2 class="YellowText"><img src="/img/gold_vbig.png"/>  What is 0day.today 1337day Gold? How to buy 0day.today 1337day Gold? How to earn 0day.today 1337day Gold?</h2>
+</div>
+<div class="spacer"></div>
+<div class="slide_block">
+<ul>
+<li><span class="GoldText">0day.today 1337day Gold</span> <img src="/img/gold.gif"/> is the currency of 0day.today 1337day project. It used for paying for the services, buying exploits, earning money, etc.</li>
+</ul>
+</div>
+<div class="slide_block">
+<ul>
+<li>You can <a href="/gold" target="_blank">buy Gold</a>: exchange money to Gold</li>
+<li>You can <a href="/faq/earn_gold" target="_blank">earn Gold</a>: selling exploits, helping with cracking hashes, etc.</li>
+</ul>
+</div>
+<div class="clear"></div>
+<div class="center">
+											We accept currencies: [<a href="/contacts" target="_blank">contact admin to find more</a>]
+											<div class="half_spacer"></div>
+<a href="/gold"><img src="/img/money/btc_big.png"/></a>   
+											<a href="/gold"><img src="/img/money/litecoin_big.png"/></a>   
+											<a href="/gold"><img src="/img/money/perfect_big.png"/></a>   
+											<a href="/gold"><img src="/img/money/wm_big.png"/></a>   
+											<a href="/gold"><img src="/img/money/wu_big.png"/></a>   
+											<a href="/gold"><img src="/img/money/okpay_big.png"/></a>   
+											<a href="/gold"><img src="/img/money/btce_big.png"/></a>
+<br/>
+<br/>
+<a href="/gold"><img src="/img/money/vm_big.png"/></a>   
+											<a href="/gold"><img src="/img/money/qiwi_big.png"/></a>   
+											<a href="/gold"><img src="/img/money/moneygram_big.png"/></a>   
+											<a href="/gold"><img src="/img/money/payeer_big.png"/></a>   
+											<a href="/gold"><img src="/img/money/dogecoin_big.png"/></a>   
+										</div>
+</div><div class="slide">
+<div class="slider_title">
+<h2 class="YellowText"><img src="/img/price_tag.png"/>  How to sell exploits? Earning 0day.today 1337day Gold.</h2>
+</div>
+<div class="spacer"></div>
+<div class="">
+<ol>
+<li><span class="YellowText">To sell exploits</span> on <strong>0day.today 1337day exploits database</strong> you need to be registered user. You can <a href="/auth" target="_blank">login</a> or <a href="/reg" target="_blank">register</a></li>
+<li>You need to <span class="YellowText">found new unique vulnerability</span> or 0day exploit. Create description, make approve video, screenshots, other useful information.</li>
+<li><span class="YellowText">Publish it</span> on our database site, wait for cheking it by 0day.today 1337day Administration. Then wait for customers and earn money!</li>
+<li>You also can <span class="YellowText">make it more popular</span> with <a href="/faq/highlight">Highlight service</a>.</li>
+<li>After <span class="YellowText">you earn</span> the <span class="GoldText">0day.today 1337day Gold</span> <img src="/img/gold.gif"/> you can <a href="/faq">get it out from the system</a> to payment ystem, that you use.</li>
+</ol>
+</div>
+<div style="margin:0px 0px 0px 20px;">Anytime support for users: [<a href="/contacts" target="_blank">contact admin</a>]</div>
+<div class="clear"></div>
+</div> </div>
+<div class="slider_control_right control" id="rightControl"></div>
+<div class="clear"></div>
+</div>
+<div class="search_block">
+<form action="/search" method="get">
+<span class=""> Search:   </span>
+<input name="search_request" size="65" type="text" value=""/>   
+				<input class="button" name="" onclick='validateForm("Notification", "Please fill it following the rules and check if it is empty. Error in field:", this.form, "search"); return false' type="submit" value="Search"/>
+				      <a class="search_extended_link" href="/search">Extended search</a>
+</form>
+</div>
+<div class="category_text">
+<center>
+<h1 class="YellowText">0day Today Exploit Market and 0day Exploits Database </h1>
+</center>
+<br/>
+</div><div class="category_title allow_tip_big">
+<div class="tip_big_position"></div>
+<h2 class="">[ <a href="/private">private</a> ]  </h2>
+<div class="TipText" style="width:700px;">
+<div class="TipContent">
+<center>
+<h1 class="YellowText">0day.today 1337day Private exploits and 0day exploits Market</h1>
+</center>
+<br/>
+<span class="YellowText">Zero-day exploits</span> target zero-day vulnerabilities. Zero-day vulnerabilities are those for which no official patch has been released by the vendor. 
+				This means that no days [<span class="YellowText">zero days</span>] have elapsed between the time the vulnerability was discovered and the time an official patch was made available. 
+				Therefore, the administrators have had zero days to fix the flaw. It ceases to be a zero day once a fix is available.
+				<br/>
+				Private category sells private Exploits and Vulnerabilities. Users can <span class="RedText">buy exploits</span> <span class="YellowText">using Gold [registered users]</span> or <span class="YellowText">using incognito mode [unregistered users]</span>, specify only mail to get material. 
+			
+			</div>
+</div>
+</div><div class="ExploitTable">
+<div class="ExploitTableHead">
+<div>-::DATE</div>
+<div>-::DESCRIPTION</div>
+<div>-::TYPE</div>
+<div>-::HITS</div>
+<div>-::RISK</div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div>-::GOLD</div>
+<div>-::AUTHOR</div>
+</div>
+</div>
+<div class="ExploitTableContent">
+<div class="td"><a href="/date/27-08-2016">27-08-2016</a></div>
+<div class="td allow_tip RedText "><h3><a href="/exploit/description/24768">Twitter reset account Private Method 0day Exploit</a></h3>
+<div class="TipText">
+<div class="tips_rate_up"><div class="tips_content">Rate up:</div> <div class="tips_value">0</div></div>
+<div class="tips_rate_down"><div class="tips_content">Rate down:</div> <div class="tips_value">0</div></div>
+<div class="tips_comments"><div class="tips_content">Comments:</div> <div class="tips_value">0</div></div>
+</div>
+</div>
+<div class="td"><a href="/platforms/tricks">tricks</a></div>
+<div class="td">6 580</div>
+<div class="td allow_tip"><img src="/img/risk/critlow_4.gif"/>
+<div class="TipText">
+<div class="tips_risk_color_4">Security Risk Critical</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/related/24768">R</a>
+<div class="TipText">
+<div class="tips_related">Related releases</div>
+</div>
+</div>
+<div class="td allow_tip" style="padding:0px;"><a href="/download/24768">D</a>
+<div class="TipText">
+<div class="tips_download">Download</div>
+</div>
+</div>
+<div class="td ">-
+					<div class="TipText">
+</div>
+</div>
+<div class="td allow_tip"> <img src="/img/check.png"/>
+<div class="TipText">
+<div class="tips_verified_1">Verified by 0day Admin</div>
+</div>
+</div>
+<div class="td allow_tip"><div style="display:inline-block; float:left; margin:0px 0px 0px 3px;"><img src="/img/gold.gif"/></div> <div class="GoldText" style="display:inline-block;position:relative; top:0px;">2 300</div>
+<div class="TipText">
+<div class="tips_price_1">Open this exploit for 2 300 GOLD</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/author/368">0day Today Team</a>
+<div class="TipText">
+<div class="tips_exploits"><div class="tips_content">Exploits:</div> <div class="tips_value_big">259</div></div>
+<div class="tips_bl"><div class="tips_content">BusinessLevel:</div> <div class="tips_value_big">25</div></div>
+<div class="tips_warnings"><div class="tips_content">Warnings:</div> <div class="tips_value_big">0</div></div>
+</div>
+</div>
+</div>
+<div class="ExploitTableContent">
+<div class="td"><a href="/date/24-07-2015">24-07-2015</a></div>
+<div class="td allow_tip RedText "><h3><a href="/exploit/description/23926">Instagram bypass Access Account Private Method Exploit</a></h3>
+<div class="TipText">
+<div class="tips_rate_up"><div class="tips_content">Rate up:</div> <div class="tips_value">0</div></div>
+<div class="tips_rate_down"><div class="tips_content">Rate down:</div> <div class="tips_value">0</div></div>
+<div class="tips_comments"><div class="tips_content">Comments:</div> <div class="tips_value">10</div></div>
+</div>
+</div>
+<div class="td"><a href="/platforms/tricks">tricks</a></div>
+<div class="td">6 358</div>
+<div class="td allow_tip"><img src="/img/risk/critlow_4.gif"/>
+<div class="TipText">
+<div class="tips_risk_color_4">Security Risk Critical</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/related/23926">R</a>
+<div class="TipText">
+<div class="tips_related">Related releases</div>
+</div>
+</div>
+<div class="td allow_tip" style="padding:0px;"><a href="/download/23926">D</a>
+<div class="TipText">
+<div class="tips_download">Download</div>
+</div>
+</div>
+<div class="td ">-
+					<div class="TipText">
+</div>
+</div>
+<div class="td allow_tip"> <img src="/img/check.png"/>
+<div class="TipText">
+<div class="tips_verified_1">Verified by 0day Admin</div>
+</div>
+</div>
+<div class="td allow_tip"><div style="display:inline-block; float:left; margin:0px 0px 0px 3px;"><img src="/img/gold.gif"/></div> <div class="GoldText" style="display:inline-block;position:relative; top:0px;">2 000</div>
+<div class="TipText">
+<div class="tips_price_1">Open this exploit for 2 000 GOLD</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/author/26863">smokzz</a>
+<div class="TipText">
+<div class="tips_exploits"><div class="tips_content">Exploits:</div> <div class="tips_value_big">1</div></div>
+<div class="tips_bl"><div class="tips_content">BusinessLevel:</div> <div class="tips_value_big">1</div></div>
+<div class="tips_warnings"><div class="tips_content">Warnings:</div> <div class="tips_value_big">0</div></div>
+</div>
+</div>
+</div>
+<div class="ExploitTableContent">
+<div class="td"><a href="/date/24-11-2015">24-11-2015</a></div>
+<div class="td allow_tip RedText "><h3><a href="/exploit/description/24604">SMF 2.1 Beta 2 Remote Code Execution 0day Exploit</a></h3>
+<div class="TipText">
+<div class="tips_rate_up"><div class="tips_content">Rate up:</div> <div class="tips_value">0</div></div>
+<div class="tips_rate_down"><div class="tips_content">Rate down:</div> <div class="tips_value">0</div></div>
+<div class="tips_comments"><div class="tips_content">Comments:</div> <div class="tips_value">0</div></div>
+</div>
+</div>
+<div class="td"><a href="/platforms/php">php</a></div>
+<div class="td">1 755</div>
+<div class="td allow_tip"><img src="/img/risk/critlow_4.gif"/>
+<div class="TipText">
+<div class="tips_risk_color_4">Security Risk Critical</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/related/24604">R</a>
+<div class="TipText">
+<div class="tips_related">Related releases</div>
+</div>
+</div>
+<div class="td allow_tip" style="padding:0px;"><a href="/download/24604">D</a>
+<div class="TipText">
+<div class="tips_download">Download</div>
+</div>
+</div>
+<div class="td ">-
+					<div class="TipText">
+</div>
+</div>
+<div class="td allow_tip"> <img src="/img/check.png"/>
+<div class="TipText">
+<div class="tips_verified_1">Verified by 0day Admin</div>
+</div>
+</div>
+<div class="td allow_tip"><div style="display:inline-block; float:left; margin:0px 0px 0px 3px;"><img src="/img/gold.gif"/></div> <div class="GoldText" style="display:inline-block;position:relative; top:0px;">3 500</div>
+<div class="TipText">
+<div class="tips_price_1">Open this exploit for 3 500 GOLD</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/author/24927">Protocol.8</a>
+<div class="TipText">
+<div class="tips_exploits"><div class="tips_content">Exploits:</div> <div class="tips_value_big">2</div></div>
+<div class="tips_bl"><div class="tips_content">BusinessLevel:</div> <div class="tips_value_big">1</div></div>
+<div class="tips_warnings"><div class="tips_content">Warnings:</div> <div class="tips_value_big">0</div></div>
+</div>
+</div>
+</div>
+<div class="ExploitTableContent">
+<div class="td"><a href="/date/06-02-2015">06-02-2015</a></div>
+<div class="td allow_tip RedText "><h3><a href="/exploit/description/23252">SMF 2.0.x Remote Code Execution 0day Exploit</a></h3>
+<div class="TipText">
+<div class="tips_rate_up"><div class="tips_content">Rate up:</div> <div class="tips_value">0</div></div>
+<div class="tips_rate_down"><div class="tips_content">Rate down:</div> <div class="tips_value">0</div></div>
+<div class="tips_comments"><div class="tips_content">Comments:</div> <div class="tips_value">14</div></div>
+</div>
+</div>
+<div class="td"><a href="/platforms/php">php</a></div>
+<div class="td">11 852</div>
+<div class="td allow_tip"><img src="/img/risk/critlow_4.gif"/>
+<div class="TipText">
+<div class="tips_risk_color_4">Security Risk Critical</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/related/23252">R</a>
+<div class="TipText">
+<div class="tips_related">Related releases</div>
+</div>
+</div>
+<div class="td allow_tip" style="padding:0px;"><a href="/download/23252">D</a>
+<div class="TipText">
+<div class="tips_download">Download</div>
+</div>
+</div>
+<div class="td ">-
+					<div class="TipText">
+</div>
+</div>
+<div class="td allow_tip"> <img src="/img/check.png"/>
+<div class="TipText">
+<div class="tips_verified_1">Verified by 0day Admin</div>
+</div>
+</div>
+<div class="td allow_tip"><div style="display:inline-block; float:left; margin:0px 0px 0px 3px;"><img src="/img/gold.gif"/></div> <div class="GoldText" style="display:inline-block;position:relative; top:0px;">5 000</div>
+<div class="TipText">
+<div class="tips_price_1">Open this exploit for 5 000 GOLD</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/author/24927">Protocol.8</a>
+<div class="TipText">
+<div class="tips_exploits"><div class="tips_content">Exploits:</div> <div class="tips_value_big">2</div></div>
+<div class="tips_bl"><div class="tips_content">BusinessLevel:</div> <div class="tips_value_big">1</div></div>
+<div class="tips_warnings"><div class="tips_content">Warnings:</div> <div class="tips_value_big">0</div></div>
+</div>
+</div>
+</div>
+<div class="ExploitTableContent">
+<div class="td"><a href="/date/27-08-2016">27-08-2016</a></div>
+<div class="td allow_tip "><h3><a href="/exploit/description/24768">Twitter reset account Private Method 0day Exploit</a></h3>
+<div class="TipText">
+<div class="tips_rate_up"><div class="tips_content">Rate up:</div> <div class="tips_value">0</div></div>
+<div class="tips_rate_down"><div class="tips_content">Rate down:</div> <div class="tips_value">0</div></div>
+<div class="tips_comments"><div class="tips_content">Comments:</div> <div class="tips_value">0</div></div>
+</div>
+</div>
+<div class="td"><a href="/platforms/tricks">tricks</a></div>
+<div class="td">6 580</div>
+<div class="td allow_tip"><img src="/img/risk/critlow_4.gif"/>
+<div class="TipText">
+<div class="tips_risk_color_4">Security Risk Critical</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/related/24768">R</a>
+<div class="TipText">
+<div class="tips_related">Related releases</div>
+</div>
+</div>
+<div class="td allow_tip" style="padding:0px;"><a href="/download/24768">D</a>
+<div class="TipText">
+<div class="tips_download">Download</div>
+</div>
+</div>
+<div class="td ">-
+					<div class="TipText">
+</div>
+</div>
+<div class="td allow_tip"> <img src="/img/check.png"/>
+<div class="TipText">
+<div class="tips_verified_1">Verified by 0day Admin</div>
+</div>
+</div>
+<div class="td allow_tip"><div style="display:inline-block; float:left; margin:0px 0px 0px 3px;"><img src="/img/gold.gif"/></div> <div class="GoldText" style="display:inline-block;position:relative; top:0px;">2 300</div>
+<div class="TipText">
+<div class="tips_price_1">Open this exploit for 2 300 GOLD</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/author/368">0day Today Team</a>
+<div class="TipText">
+<div class="tips_exploits"><div class="tips_content">Exploits:</div> <div class="tips_value_big">259</div></div>
+<div class="tips_bl"><div class="tips_content">BusinessLevel:</div> <div class="tips_value_big">25</div></div>
+<div class="tips_warnings"><div class="tips_content">Warnings:</div> <div class="tips_value_big">0</div></div>
+</div>
+</div>
+</div>
+<div class="ExploitTableContent">
+<div class="td"><a href="/date/29-11-2015">29-11-2015</a></div>
+<div class="td allow_tip "><h3><a href="/exploit/description/24627">Scuolabook purchased e-books on .pdf format Download Exploit</a></h3>
+<div class="TipText">
+<div class="tips_rate_up"><div class="tips_content">Rate up:</div> <div class="tips_value">0</div></div>
+<div class="tips_rate_down"><div class="tips_content">Rate down:</div> <div class="tips_value">0</div></div>
+<div class="tips_comments"><div class="tips_content">Comments:</div> <div class="tips_value">0</div></div>
+</div>
+</div>
+<div class="td"><a href="/platforms/tricks">tricks</a></div>
+<div class="td">1 183</div>
+<div class="td allow_tip"><img src="/img/risk/critlow_1.gif"/>
+<div class="TipText">
+<div class="tips_risk_color_1">Security Risk Low</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/related/24627">R</a>
+<div class="TipText">
+<div class="tips_related">Related releases</div>
+</div>
+</div>
+<div class="td allow_tip" style="padding:0px;"><a href="/download/24627">D</a>
+<div class="TipText">
+<div class="tips_download">Download</div>
+</div>
+</div>
+<div class="td ">-
+					<div class="TipText">
+</div>
+</div>
+<div class="td allow_tip"> <img src="/img/check.png"/>
+<div class="TipText">
+<div class="tips_verified_1">Verified by 0day Admin</div>
+</div>
+</div>
+<div class="td allow_tip"><div style="display:inline-block; float:left; margin:0px 0px 0px 3px;"><img src="/img/gold.gif"/></div> <div class="GoldText" style="display:inline-block;position:relative; top:0px;">100</div>
+<div class="TipText">
+<div class="tips_price_1">Open this exploit for 100 GOLD</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/author/27782">MrUke</a>
+<div class="TipText">
+<div class="tips_exploits"><div class="tips_content">Exploits:</div> <div class="tips_value_big">1</div></div>
+<div class="tips_bl"><div class="tips_content">BusinessLevel:</div> <div class="tips_value_big">0</div></div>
+<div class="tips_warnings"><div class="tips_content">Warnings:</div> <div class="tips_value_big">0</div></div>
+</div>
+</div>
+</div>
+<div class="ExploitTableContent">
+<div class="td"><a href="/date/24-11-2015">24-11-2015</a></div>
+<div class="td allow_tip "><h3><a href="/exploit/description/24604">SMF 2.1 Beta 2 Remote Code Execution 0day Exploit</a></h3>
+<div class="TipText">
+<div class="tips_rate_up"><div class="tips_content">Rate up:</div> <div class="tips_value">0</div></div>
+<div class="tips_rate_down"><div class="tips_content">Rate down:</div> <div class="tips_value">0</div></div>
+<div class="tips_comments"><div class="tips_content">Comments:</div> <div class="tips_value">0</div></div>
+</div>
+</div>
+<div class="td"><a href="/platforms/php">php</a></div>
+<div class="td">1 755</div>
+<div class="td allow_tip"><img src="/img/risk/critlow_4.gif"/>
+<div class="TipText">
+<div class="tips_risk_color_4">Security Risk Critical</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/related/24604">R</a>
+<div class="TipText">
+<div class="tips_related">Related releases</div>
+</div>
+</div>
+<div class="td allow_tip" style="padding:0px;"><a href="/download/24604">D</a>
+<div class="TipText">
+<div class="tips_download">Download</div>
+</div>
+</div>
+<div class="td ">-
+					<div class="TipText">
+</div>
+</div>
+<div class="td allow_tip"> <img src="/img/check.png"/>
+<div class="TipText">
+<div class="tips_verified_1">Verified by 0day Admin</div>
+</div>
+</div>
+<div class="td allow_tip"><div style="display:inline-block; float:left; margin:0px 0px 0px 3px;"><img src="/img/gold.gif"/></div> <div class="GoldText" style="display:inline-block;position:relative; top:0px;">3 500</div>
+<div class="TipText">
+<div class="tips_price_1">Open this exploit for 3 500 GOLD</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/author/24927">Protocol.8</a>
+<div class="TipText">
+<div class="tips_exploits"><div class="tips_content">Exploits:</div> <div class="tips_value_big">2</div></div>
+<div class="tips_bl"><div class="tips_content">BusinessLevel:</div> <div class="tips_value_big">1</div></div>
+<div class="tips_warnings"><div class="tips_content">Warnings:</div> <div class="tips_value_big">0</div></div>
+</div>
+</div>
+</div>
+<div class="ExploitTableContent">
+<div class="td"><a href="/date/14-11-2015">14-11-2015</a></div>
+<div class="td allow_tip "><h3><a href="/exploit/description/24543">Truecaller search limit bypass and gathering information Exploit</a></h3>
+<div class="TipText">
+<div class="tips_rate_up"><div class="tips_content">Rate up:</div> <div class="tips_value">0</div></div>
+<div class="tips_rate_down"><div class="tips_content">Rate down:</div> <div class="tips_value">0</div></div>
+<div class="tips_comments"><div class="tips_content">Comments:</div> <div class="tips_value">0</div></div>
+</div>
+</div>
+<div class="td"><a href="/platforms/linux">linux</a></div>
+<div class="td">1 554</div>
+<div class="td allow_tip"><img src="/img/risk/critlow_3.gif"/>
+<div class="TipText">
+<div class="tips_risk_color_3">Security Risk High</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/related/24543">R</a>
+<div class="TipText">
+<div class="tips_related">Related releases</div>
+</div>
+</div>
+<div class="td allow_tip" style="padding:0px;"><a href="/download/24543">D</a>
+<div class="TipText">
+<div class="tips_download">Download</div>
+</div>
+</div>
+<div class="td ">-
+					<div class="TipText">
+</div>
+</div>
+<div class="td allow_tip"> <img src="/img/check.png"/>
+<div class="TipText">
+<div class="tips_verified_1">Verified by 0day Admin</div>
+</div>
+</div>
+<div class="td allow_tip"><div style="display:inline-block; float:left; margin:0px 0px 0px 3px;"><img src="/img/gold.gif"/></div> <div class="GoldText" style="display:inline-block;position:relative; top:0px;">500</div>
+<div class="TipText">
+<div class="tips_price_1">Open this exploit for 500 GOLD</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/author/27529">harishkumar0394</a>
+<div class="TipText">
+<div class="tips_exploits"><div class="tips_content">Exploits:</div> <div class="tips_value_big">1</div></div>
+<div class="tips_bl"><div class="tips_content">BusinessLevel:</div> <div class="tips_value_big">1</div></div>
+<div class="tips_warnings"><div class="tips_content">Warnings:</div> <div class="tips_value_big">0</div></div>
+</div>
+</div>
+</div>
+<div class="spacer"></div><div class="category_title allow_tip_big">
+<div class="tip_big_position"></div>
+<h2 class="">[ <a href="/remote">remote exploits</a> ]  </h2>
+<div class="TipText" style="width:700px;">
+<div class="TipContent">
+<center>
+<h1 class="YellowText">Remote exploits and vulnerabilities category</h1>
+</center>
+<br/>
+				A "remote exploit" works over a network and exploits the security vulnerability without any prior access to the vulnerable system.
+			
+			</div>
+</div>
+</div><div class="ExploitTable">
+<div class="ExploitTableHead">
+<div>-::DATE</div>
+<div>-::DESCRIPTION</div>
+<div>-::TYPE</div>
+<div>-::HITS</div>
+<div>-::RISK</div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div>-::GOLD</div>
+<div>-::AUTHOR</div>
+</div>
+</div>
+<div class="ExploitTableContent">
+<div class="td"><a href="/date/15-10-2016">15-10-2016</a></div>
+<div class="td allow_tip "><h3><a href="/exploit/description/25576">Ruby on Rails Dynamic Render File Upload Remote Code Execution</a></h3>
+<div class="TipText"><div class="tips_comments"><div class="tips_content">Comments:</div> <div class="tips_value">0</div></div></div>
+</div>
+<div class="td"><a href="/platforms/ruby">ruby</a></div>
+<div class="td">11</div>
+<div class="td allow_tip"><img src="/img/risk/critlow_4.gif"/>
+<div class="TipText">
+<div class="tips_risk_color_4">Security Risk Critical</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/related/25576">R</a>
+<div class="TipText">
+<div class="tips_related">Related releases</div>
+</div>
+</div>
+<div class="td allow_tip" style="padding:0px;"><a href="/download/25576">D</a>
+<div class="TipText">
+<div class="tips_download">Download</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="#">C</a>
+<div class="TipText">
+						CVE-2016-0752<br/>
+</div>
+</div>
+<div class="td allow_tip"> <img src="/img/check.png"/>
+<div class="TipText">
+<div class="tips_verified_1">Verified by 0day Admin</div>
+</div>
+</div>
+<div class="td allow_tip">free
+					<div class="TipText">
+<div class="tips_price_0">You can open this exploit for free</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/author/2911">metasploit</a>
+<div class="TipText">
+<div class="tips_exploits"><div class="tips_content">Exploits:</div> <div class="tips_value_big">899</div></div>
+<div class="tips_bl"><div class="tips_content">BusinessLevel:</div> <div class="tips_value_big">52</div></div>
+<div class="tips_warnings"><div class="tips_content">Warnings:</div> <div class="tips_value_big">0</div></div>
+</div>
+</div>
+</div>
+<div class="ExploitTableContent">
+<div class="td"><a href="/date/12-10-2016">12-10-2016</a></div>
+<div class="td allow_tip "><h3><a href="/exploit/description/25494">Subversion 1.6.6 / 1.6.12 - Code Execution</a></h3>
+<div class="TipText"><div class="tips_comments"><div class="tips_content">Comments:</div> <div class="tips_value">0</div></div></div>
+</div>
+<div class="td"><a href="/platforms/linux">linux</a></div>
+<div class="td">3</div>
+<div class="td allow_tip"><img src="/img/risk/critlow_4.gif"/>
+<div class="TipText">
+<div class="tips_risk_color_4">Security Risk Critical</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/related/25494">R</a>
+<div class="TipText">
+<div class="tips_related">Related releases</div>
+</div>
+</div>
+<div class="td allow_tip" style="padding:0px;"><a href="/download/25494">D</a>
+<div class="TipText">
+<div class="tips_download">Download</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="#">C</a>
+<div class="TipText">
+						CVE-2013-2088<br/>
+</div>
+</div>
+<div class="td allow_tip"> <img src="/img/check.png"/>
+<div class="TipText">
+<div class="tips_verified_1">Verified by 0day Admin</div>
+</div>
+</div>
+<div class="td allow_tip">free
+					<div class="TipText">
+<div class="tips_price_0">You can open this exploit for free</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/author/28215">GlacierZ0ne</a>
+<div class="TipText">
+<div class="tips_exploits"><div class="tips_content">Exploits:</div> <div class="tips_value_big">1</div></div>
+<div class="tips_bl"><div class="tips_content">BusinessLevel:</div> <div class="tips_value_big">0</div></div>
+<div class="tips_warnings"><div class="tips_content">Warnings:</div> <div class="tips_value_big">0</div></div>
+</div>
+</div>
+</div>
+<div class="ExploitTableContent">
+<div class="td"><a href="/date/11-10-2016">11-10-2016</a></div>
+<div class="td allow_tip "><h3><a href="/exploit/description/25484">Powershell Payload Execution Exploit</a></h3>
+<div class="TipText"><div class="tips_comments"><div class="tips_content">Comments:</div> <div class="tips_value">0</div></div></div>
+</div>
+<div class="td"><a href="/platforms/windows">windows</a></div>
+<div class="td">18</div>
+<div class="td allow_tip"><img src="/img/risk/critlow_4.gif"/>
+<div class="TipText">
+<div class="tips_risk_color_4">Security Risk Critical</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/related/25484">R</a>
+<div class="TipText">
+<div class="tips_related">Related releases</div>
+</div>
+</div>
+<div class="td allow_tip" style="padding:0px;"><a href="/download/25484">D</a>
+<div class="TipText">
+<div class="tips_download">Download</div>
+</div>
+</div>
+<div class="td ">-
+					<div class="TipText">
+</div>
+</div>
+<div class="td allow_tip"> <img src="/img/check.png"/>
+<div class="TipText">
+<div class="tips_verified_1">Verified by 0day Admin</div>
+</div>
+</div>
+<div class="td allow_tip">free
+					<div class="TipText">
+<div class="tips_price_0">You can open this exploit for free</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/author/3367">Matt Andreko</a>
+<div class="TipText">
+<div class="tips_exploits"><div class="tips_content">Exploits:</div> <div class="tips_value_big">3</div></div>
+<div class="tips_bl"><div class="tips_content">BusinessLevel:</div> <div class="tips_value_big">2</div></div>
+<div class="tips_warnings"><div class="tips_content">Warnings:</div> <div class="tips_value_big">0</div></div>
+</div>
+</div>
+</div>
+<div class="ExploitTableContent">
+<div class="td"><a href="/date/10-10-2016">10-10-2016</a></div>
+<div class="td allow_tip "><h3><a href="/exploit/description/25480">Allwinner 3.4 Legacy Kernel Local Privilege Escalation</a></h3>
+<div class="TipText"><div class="tips_comments"><div class="tips_content">Comments:</div> <div class="tips_value">0</div></div></div>
+</div>
+<div class="td"><a href="/platforms/hardware">hardware</a></div>
+<div class="td">1</div>
+<div class="td allow_tip"><img src="/img/risk/critlow_4.gif"/>
+<div class="TipText">
+<div class="tips_risk_color_4">Security Risk Critical</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/related/25480">R</a>
+<div class="TipText">
+<div class="tips_related">Related releases</div>
+</div>
+</div>
+<div class="td allow_tip" style="padding:0px;"><a href="/download/25480">D</a>
+<div class="TipText">
+<div class="tips_download">Download</div>
+</div>
+</div>
+<div class="td ">-
+					<div class="TipText">
+</div>
+</div>
+<div class="td allow_tip"> <img src="/img/check.png"/>
+<div class="TipText">
+<div class="tips_verified_1">Verified by 0day Admin</div>
+</div>
+</div>
+<div class="td allow_tip">free
+					<div class="TipText">
+<div class="tips_price_0">You can open this exploit for free</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/author/2911">metasploit</a>
+<div class="TipText">
+<div class="tips_exploits"><div class="tips_content">Exploits:</div> <div class="tips_value_big">899</div></div>
+<div class="tips_bl"><div class="tips_content">BusinessLevel:</div> <div class="tips_value_big">52</div></div>
+<div class="tips_warnings"><div class="tips_content">Warnings:</div> <div class="tips_value_big">0</div></div>
+</div>
+</div>
+</div>
+<div class="ExploitTableContent">
+<div class="td"><a href="/date/07-10-2016">07-10-2016</a></div>
+<div class="td allow_tip "><h3><a href="/exploit/description/25373">Exagate WEBPack Management System - Multiple Vulnerabilities</a></h3>
+<div class="TipText"><div class="tips_comments"><div class="tips_content">Comments:</div> <div class="tips_value">0</div></div></div>
+</div>
+<div class="td"><a href="/platforms/hardware">hardware</a></div>
+<div class="td">3</div>
+<div class="td allow_tip"><img src="/img/risk/critlow_3.gif"/>
+<div class="TipText">
+<div class="tips_risk_color_3">Security Risk High</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/related/25373">R</a>
+<div class="TipText">
+<div class="tips_related">Related releases</div>
+</div>
+</div>
+<div class="td allow_tip" style="padding:0px;"><a href="/download/25373">D</a>
+<div class="TipText">
+<div class="tips_download">Download</div>
+</div>
+</div>
+<div class="td ">-
+					<div class="TipText">
+</div>
+</div>
+<div class="td allow_tip"> <img src="/img/check.png"/>
+<div class="TipText">
+<div class="tips_verified_1">Verified by 0day Admin</div>
+</div>
+</div>
+<div class="td allow_tip">free
+					<div class="TipText">
+<div class="tips_price_0">You can open this exploit for free</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/author/23403">Halil Dalabasmaz</a>
+<div class="TipText">
+<div class="tips_exploits"><div class="tips_content">Exploits:</div> <div class="tips_value_big">13</div></div>
+<div class="tips_bl"><div class="tips_content">BusinessLevel:</div> <div class="tips_value_big">2</div></div>
+<div class="tips_warnings"><div class="tips_content">Warnings:</div> <div class="tips_value_big">0</div></div>
+</div>
+</div>
+</div>
+<div class="ExploitTableContent">
+<div class="td"><a href="/date/06-10-2016">06-10-2016</a></div>
+<div class="td allow_tip "><h3><a href="/exploit/description/25361">Billion Router 7700NR4 - Remote Command Execution Exploit</a></h3>
+<div class="TipText"><div class="tips_comments"><div class="tips_content">Comments:</div> <div class="tips_value">0</div></div></div>
+</div>
+<div class="td"><a href="/platforms/hardware">hardware</a></div>
+<div class="td">12</div>
+<div class="td allow_tip"><img src="/img/risk/critlow_4.gif"/>
+<div class="TipText">
+<div class="tips_risk_color_4">Security Risk Critical</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/related/25361">R</a>
+<div class="TipText">
+<div class="tips_related">Related releases</div>
+</div>
+</div>
+<div class="td allow_tip" style="padding:0px;"><a href="/download/25361">D</a>
+<div class="TipText">
+<div class="tips_download">Download</div>
+</div>
+</div>
+<div class="td ">-
+					<div class="TipText">
+</div>
+</div>
+<div class="td allow_tip"> <img src="/img/check.png"/>
+<div class="TipText">
+<div class="tips_verified_1">Verified by 0day Admin</div>
+</div>
+</div>
+<div class="td allow_tip">free
+					<div class="TipText">
+<div class="tips_price_0">You can open this exploit for free</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/author/24514">R-73eN</a>
+<div class="TipText">
+<div class="tips_exploits"><div class="tips_content">Exploits:</div> <div class="tips_value_big">19</div></div>
+<div class="tips_bl"><div class="tips_content">BusinessLevel:</div> <div class="tips_value_big">2</div></div>
+<div class="tips_warnings"><div class="tips_content">Warnings:</div> <div class="tips_value_big">0</div></div>
+</div>
+</div>
+</div>
+<div class="ExploitTableContent">
+<div class="td"><a href="/date/05-10-2016">05-10-2016</a></div>
+<div class="td allow_tip "><h3><a href="/exploit/description/25353">VX Search Enterprise 9.0.26 - Buffer Overflow Exploit</a></h3>
+<div class="TipText"><div class="tips_comments"><div class="tips_content">Comments:</div> <div class="tips_value">0</div></div></div>
+</div>
+<div class="td"><a href="/platforms/windows">windows</a></div>
+<div class="td">85</div>
+<div class="td allow_tip"><img src="/img/risk/critlow_3.gif"/>
+<div class="TipText">
+<div class="tips_risk_color_3">Security Risk High</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/related/25353">R</a>
+<div class="TipText">
+<div class="tips_related">Related releases</div>
+</div>
+</div>
+<div class="td allow_tip" style="padding:0px;"><a href="/download/25353">D</a>
+<div class="TipText">
+<div class="tips_download">Download</div>
+</div>
+</div>
+<div class="td ">-
+					<div class="TipText">
+</div>
+</div>
+<div class="td allow_tip"> <img src="/img/check.png"/>
+<div class="TipText">
+<div class="tips_verified_1">Verified by 0day Admin</div>
+</div>
+</div>
+<div class="td allow_tip">free
+					<div class="TipText">
+<div class="tips_price_0">You can open this exploit for free</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/author/27989">Tulpa</a>
+<div class="TipText">
+<div class="tips_exploits"><div class="tips_content">Exploits:</div> <div class="tips_value_big">19</div></div>
+<div class="tips_bl"><div class="tips_content">BusinessLevel:</div> <div class="tips_value_big">1</div></div>
+<div class="tips_warnings"><div class="tips_content">Warnings:</div> <div class="tips_value_big">0</div></div>
+</div>
+</div>
+</div>
+<div class="ExploitTableContent">
+<div class="td"><a href="/date/05-10-2016">05-10-2016</a></div>
+<div class="td allow_tip "><h3><a href="/exploit/description/25352">Sync Breeze Enterprise 8.9.24 - Buffer Overflow Exploit</a></h3>
+<div class="TipText"><div class="tips_comments"><div class="tips_content">Comments:</div> <div class="tips_value">0</div></div></div>
+</div>
+<div class="td"><a href="/platforms/windows">windows</a></div>
+<div class="td">70</div>
+<div class="td allow_tip"><img src="/img/risk/critlow_3.gif"/>
+<div class="TipText">
+<div class="tips_risk_color_3">Security Risk High</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/related/25352">R</a>
+<div class="TipText">
+<div class="tips_related">Related releases</div>
+</div>
+</div>
+<div class="td allow_tip" style="padding:0px;"><a href="/download/25352">D</a>
+<div class="TipText">
+<div class="tips_download">Download</div>
+</div>
+</div>
+<div class="td ">-
+					<div class="TipText">
+</div>
+</div>
+<div class="td allow_tip"> <img src="/img/check.png"/>
+<div class="TipText">
+<div class="tips_verified_1">Verified by 0day Admin</div>
+</div>
+</div>
+<div class="td allow_tip">free
+					<div class="TipText">
+<div class="tips_price_0">You can open this exploit for free</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/author/27989">Tulpa</a>
+<div class="TipText">
+<div class="tips_exploits"><div class="tips_content">Exploits:</div> <div class="tips_value_big">19</div></div>
+<div class="tips_bl"><div class="tips_content">BusinessLevel:</div> <div class="tips_value_big">1</div></div>
+<div class="tips_warnings"><div class="tips_content">Warnings:</div> <div class="tips_value_big">0</div></div>
+</div>
+</div>
+</div>
+<div class="spacer"></div><div class="category_title allow_tip_big">
+<div class="tip_big_position"></div>
+<h2 class="">[ <a href="/local">local exploits</a> ]  </h2>
+<div class="TipText" style="width:700px;">
+<div class="TipContent">
+<center>
+<h1 class="YellowText">Local exploits and vulnerabilities  category</h1>
+</center>
+<br/>
+				A "local exploit" requires prior access to the vulnerable system and usually increases the privileges of the person running the exploit past those granted by the system administrator. Exploits against client applications also exist, usually consisting of modified servers that send an exploit if accessed with client application. 
+			
+			</div>
+</div>
+</div><div class="ExploitTable">
+<div class="ExploitTableHead">
+<div>-::DATE</div>
+<div>-::DESCRIPTION</div>
+<div>-::TYPE</div>
+<div>-::HITS</div>
+<div>-::RISK</div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div>-::GOLD</div>
+<div>-::AUTHOR</div>
+</div>
+</div>
+<div class="ExploitTableContent">
+<div class="td"><a href="/date/16-10-2016">16-10-2016</a></div>
+<div class="td allow_tip "><h3><a href="/exploit/description/25703">Microsoft SQL Server Unquoted Service Path Privilege Escalation Vulnerability</a></h3>
+<div class="TipText"><div class="tips_comments"><div class="tips_content">Comments:</div> <div class="tips_value">0</div></div></div>
+</div>
+<div class="td"><a href="/platforms/windows">windows</a></div>
+<div class="td">29</div>
+<div class="td allow_tip"><img src="/img/risk/critlow_3.gif"/>
+<div class="TipText">
+<div class="tips_risk_color_3">Security Risk High</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/related/25703">R</a>
+<div class="TipText">
+<div class="tips_related">Related releases</div>
+</div>
+</div>
+<div class="td allow_tip" style="padding:0px;"><a href="/download/25703">D</a>
+<div class="TipText">
+<div class="tips_download">Download</div>
+</div>
+</div>
+<div class="td ">-
+					<div class="TipText">
+</div>
+</div>
+<div class="td allow_tip"> <img src="/img/check.png"/>
+<div class="TipText">
+<div class="tips_verified_1">Verified by 0day Admin</div>
+</div>
+</div>
+<div class="td allow_tip">free
+					<div class="TipText">
+<div class="tips_price_0">You can open this exploit for free</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/author/28262">Saeed Hasanzadeh</a>
+<div class="TipText">
+<div class="tips_exploits"><div class="tips_content">Exploits:</div> <div class="tips_value_big">2</div></div>
+<div class="tips_bl"><div class="tips_content">BusinessLevel:</div> <div class="tips_value_big">0</div></div>
+<div class="tips_warnings"><div class="tips_content">Warnings:</div> <div class="tips_value_big">0</div></div>
+</div>
+</div>
+</div>
+<div class="ExploitTableContent">
+<div class="td"><a href="/date/16-10-2016">16-10-2016</a></div>
+<div class="td allow_tip "><h3><a href="/exploit/description/25702">Wondershare PDFelement Unquoted Service Path Privilege Escalation Vulnerability</a></h3>
+<div class="TipText"><div class="tips_comments"><div class="tips_content">Comments:</div> <div class="tips_value">0</div></div></div>
+</div>
+<div class="td"><a href="/platforms/windows">windows</a></div>
+<div class="td">6</div>
+<div class="td allow_tip"><img src="/img/risk/critlow_3.gif"/>
+<div class="TipText">
+<div class="tips_risk_color_3">Security Risk High</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/related/25702">R</a>
+<div class="TipText">
+<div class="tips_related">Related releases</div>
+</div>
+</div>
+<div class="td allow_tip" style="padding:0px;"><a href="/download/25702">D</a>
+<div class="TipText">
+<div class="tips_download">Download</div>
+</div>
+</div>
+<div class="td ">-
+					<div class="TipText">
+</div>
+</div>
+<div class="td allow_tip"> <img src="/img/check.png"/>
+<div class="TipText">
+<div class="tips_verified_1">Verified by 0day Admin</div>
+</div>
+</div>
+<div class="td allow_tip">free
+					<div class="TipText">
+<div class="tips_price_0">You can open this exploit for free</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/author/28262">Saeed Hasanzadeh</a>
+<div class="TipText">
+<div class="tips_exploits"><div class="tips_content">Exploits:</div> <div class="tips_value_big">2</div></div>
+<div class="tips_bl"><div class="tips_content">BusinessLevel:</div> <div class="tips_value_big">0</div></div>
+<div class="tips_warnings"><div class="tips_content">Warnings:</div> <div class="tips_value_big">0</div></div>
+</div>
+</div>
+</div>
+<div class="ExploitTableContent">
+<div class="td"><a href="/date/14-10-2016">14-10-2016</a></div>
+<div class="td allow_tip "><h3><a href="/exploit/description/25574">NO-IP DUC v4.1.1 - Unquoted Service Path Privilege Escalation</a></h3>
+<div class="TipText"><div class="tips_comments"><div class="tips_content">Comments:</div> <div class="tips_value">0</div></div></div>
+</div>
+<div class="td"><a href="/platforms/windows">windows</a></div>
+<div class="td">1</div>
+<div class="td allow_tip"><img src="/img/risk/critlow_3.gif"/>
+<div class="TipText">
+<div class="tips_risk_color_3">Security Risk High</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/related/25574">R</a>
+<div class="TipText">
+<div class="tips_related">Related releases</div>
+</div>
+</div>
+<div class="td allow_tip" style="padding:0px;"><a href="/download/25574">D</a>
+<div class="TipText">
+<div class="tips_download">Download</div>
+</div>
+</div>
+<div class="td ">-
+					<div class="TipText">
+</div>
+</div>
+<div class="td allow_tip"> <img src="/img/check.png"/>
+<div class="TipText">
+<div class="tips_verified_1">Verified by 0day Admin</div>
+</div>
+</div>
+<div class="td allow_tip">free
+					<div class="TipText">
+<div class="tips_price_0">You can open this exploit for free</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/author/27080">Ehsan Hosseini</a>
+<div class="TipText">
+<div class="tips_exploits"><div class="tips_content">Exploits:</div> <div class="tips_value_big">6</div></div>
+<div class="tips_bl"><div class="tips_content">BusinessLevel:</div> <div class="tips_value_big">1</div></div>
+<div class="tips_warnings"><div class="tips_content">Warnings:</div> <div class="tips_value_big">0</div></div>
+</div>
+</div>
+</div>
+<div class="ExploitTableContent">
+<div class="td"><a href="/date/14-10-2016">14-10-2016</a></div>
+<div class="td allow_tip "><h3><a href="/exploit/description/25572">Hotspot Shield 6.0.3 - Unquoted Service Path Privilege Escalation</a></h3>
+<div class="TipText"><div class="tips_comments"><div class="tips_content">Comments:</div> <div class="tips_value">0</div></div></div>
+</div>
+<div class="td"><a href="/platforms/windows">windows</a></div>
+<div class="td">4</div>
+<div class="td allow_tip"><img src="/img/risk/critlow_3.gif"/>
+<div class="TipText">
+<div class="tips_risk_color_3">Security Risk High</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/related/25572">R</a>
+<div class="TipText">
+<div class="tips_related">Related releases</div>
+</div>
+</div>
+<div class="td allow_tip" style="padding:0px;"><a href="/download/25572">D</a>
+<div class="TipText">
+<div class="tips_download">Download</div>
+</div>
+</div>
+<div class="td ">-
+					<div class="TipText">
+</div>
+</div>
+<div class="td allow_tip"> <img src="/img/check.png"/>
+<div class="TipText">
+<div class="tips_verified_1">Verified by 0day Admin</div>
+</div>
+</div>
+<div class="td allow_tip">free
+					<div class="TipText">
+<div class="tips_price_0">You can open this exploit for free</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/author/28213">Amir.ght</a>
+<div class="TipText">
+<div class="tips_exploits"><div class="tips_content">Exploits:</div> <div class="tips_value_big">3</div></div>
+<div class="tips_bl"><div class="tips_content">BusinessLevel:</div> <div class="tips_value_big">0</div></div>
+<div class="tips_warnings"><div class="tips_content">Warnings:</div> <div class="tips_value_big">0</div></div>
+</div>
+</div>
+</div>
+<div class="ExploitTableContent">
+<div class="td"><a href="/date/13-10-2016">13-10-2016</a></div>
+<div class="td allow_tip "><h3><a href="/exploit/description/25539">IObit Malware Fighter 4.3.1 - Unquoted Service Path Privilege Escalation</a></h3>
+<div class="TipText"><div class="tips_comments"><div class="tips_content">Comments:</div> <div class="tips_value">0</div></div></div>
+</div>
+<div class="td"><a href="/platforms/windows">windows</a></div>
+<div class="td">0</div>
+<div class="td allow_tip"><img src="/img/risk/critlow_3.gif"/>
+<div class="TipText">
+<div class="tips_risk_color_3">Security Risk High</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/related/25539">R</a>
+<div class="TipText">
+<div class="tips_related">Related releases</div>
+</div>
+</div>
+<div class="td allow_tip" style="padding:0px;"><a href="/download/25539">D</a>
+<div class="TipText">
+<div class="tips_download">Download</div>
+</div>
+</div>
+<div class="td ">-
+					<div class="TipText">
+</div>
+</div>
+<div class="td allow_tip"> <img src="/img/check.png"/>
+<div class="TipText">
+<div class="tips_verified_1">Verified by 0day Admin</div>
+</div>
+</div>
+<div class="td allow_tip">free
+					<div class="TipText">
+<div class="tips_price_0">You can open this exploit for free</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/author/28213">Amir.ght</a>
+<div class="TipText">
+<div class="tips_exploits"><div class="tips_content">Exploits:</div> <div class="tips_value_big">3</div></div>
+<div class="tips_bl"><div class="tips_content">BusinessLevel:</div> <div class="tips_value_big">0</div></div>
+<div class="tips_warnings"><div class="tips_content">Warnings:</div> <div class="tips_value_big">0</div></div>
+</div>
+</div>
+</div>
+<div class="ExploitTableContent">
+<div class="td"><a href="/date/13-10-2016">13-10-2016</a></div>
+<div class="td allow_tip "><h3><a href="/exploit/description/25538">ATKGFNEXSrv ATKGFNEX 1.0.11.1 - Unquoted Service Path Privilege Escalation</a></h3>
+<div class="TipText"><div class="tips_comments"><div class="tips_content">Comments:</div> <div class="tips_value">0</div></div></div>
+</div>
+<div class="td"><a href="/platforms/windows">windows</a></div>
+<div class="td">0</div>
+<div class="td allow_tip"><img src="/img/risk/critlow_3.gif"/>
+<div class="TipText">
+<div class="tips_risk_color_3">Security Risk High</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/related/25538">R</a>
+<div class="TipText">
+<div class="tips_related">Related releases</div>
+</div>
+</div>
+<div class="td allow_tip" style="padding:0px;"><a href="/download/25538">D</a>
+<div class="TipText">
+<div class="tips_download">Download</div>
+</div>
+</div>
+<div class="td ">-
+					<div class="TipText">
+</div>
+</div>
+<div class="td allow_tip"> <img src="/img/check.png"/>
+<div class="TipText">
+<div class="tips_verified_1">Verified by 0day Admin</div>
+</div>
+</div>
+<div class="td allow_tip">free
+					<div class="TipText">
+<div class="tips_price_0">You can open this exploit for free</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/author/28225">Cyril Vallicari</a>
+<div class="TipText">
+<div class="tips_exploits"><div class="tips_content">Exploits:</div> <div class="tips_value_big">8</div></div>
+<div class="tips_bl"><div class="tips_content">BusinessLevel:</div> <div class="tips_value_big">0</div></div>
+<div class="tips_warnings"><div class="tips_content">Warnings:</div> <div class="tips_value_big">0</div></div>
+</div>
+</div>
+</div>
+<div class="ExploitTableContent">
+<div class="td"><a href="/date/13-10-2016">13-10-2016</a></div>
+<div class="td allow_tip "><h3><a href="/exploit/description/25537">ASLDRService ATK Hotkey 1.0.69.0 - Unquoted Service Path Privilege Escalation</a></h3>
+<div class="TipText"><div class="tips_comments"><div class="tips_content">Comments:</div> <div class="tips_value">0</div></div></div>
+</div>
+<div class="td"><a href="/platforms/windows">windows</a></div>
+<div class="td">0</div>
+<div class="td allow_tip"><img src="/img/risk/critlow_3.gif"/>
+<div class="TipText">
+<div class="tips_risk_color_3">Security Risk High</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/related/25537">R</a>
+<div class="TipText">
+<div class="tips_related">Related releases</div>
+</div>
+</div>
+<div class="td allow_tip" style="padding:0px;"><a href="/download/25537">D</a>
+<div class="TipText">
+<div class="tips_download">Download</div>
+</div>
+</div>
+<div class="td ">-
+					<div class="TipText">
+</div>
+</div>
+<div class="td allow_tip"> <img src="/img/check.png"/>
+<div class="TipText">
+<div class="tips_verified_1">Verified by 0day Admin</div>
+</div>
+</div>
+<div class="td allow_tip">free
+					<div class="TipText">
+<div class="tips_price_0">You can open this exploit for free</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/author/28225">Cyril Vallicari</a>
+<div class="TipText">
+<div class="tips_exploits"><div class="tips_content">Exploits:</div> <div class="tips_value_big">8</div></div>
+<div class="tips_bl"><div class="tips_content">BusinessLevel:</div> <div class="tips_value_big">0</div></div>
+<div class="tips_warnings"><div class="tips_content">Warnings:</div> <div class="tips_value_big">0</div></div>
+</div>
+</div>
+</div>
+<div class="ExploitTableContent">
+<div class="td"><a href="/date/13-10-2016">13-10-2016</a></div>
+<div class="td allow_tip "><h3><a href="/exploit/description/25536">InsOnSrv Asus InstantOn 2.3.1.1 - Unquoted Service Path Privilege Escalation</a></h3>
+<div class="TipText"><div class="tips_comments"><div class="tips_content">Comments:</div> <div class="tips_value">0</div></div></div>
+</div>
+<div class="td"><a href="/platforms/windows">windows</a></div>
+<div class="td">0</div>
+<div class="td allow_tip"><img src="/img/risk/critlow_3.gif"/>
+<div class="TipText">
+<div class="tips_risk_color_3">Security Risk High</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/related/25536">R</a>
+<div class="TipText">
+<div class="tips_related">Related releases</div>
+</div>
+</div>
+<div class="td allow_tip" style="padding:0px;"><a href="/download/25536">D</a>
+<div class="TipText">
+<div class="tips_download">Download</div>
+</div>
+</div>
+<div class="td ">-
+					<div class="TipText">
+</div>
+</div>
+<div class="td allow_tip"> <img src="/img/check.png"/>
+<div class="TipText">
+<div class="tips_verified_1">Verified by 0day Admin</div>
+</div>
+</div>
+<div class="td allow_tip">free
+					<div class="TipText">
+<div class="tips_price_0">You can open this exploit for free</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/author/28225">Cyril Vallicari</a>
+<div class="TipText">
+<div class="tips_exploits"><div class="tips_content">Exploits:</div> <div class="tips_value_big">8</div></div>
+<div class="tips_bl"><div class="tips_content">BusinessLevel:</div> <div class="tips_value_big">0</div></div>
+<div class="tips_warnings"><div class="tips_content">Warnings:</div> <div class="tips_value_big">0</div></div>
+</div>
+</div>
+</div>
+<div class="spacer"></div><div class="category_title allow_tip_big">
+<div class="tip_big_position"></div>
+<h2 class="">[ <a href="/webapps">web applications</a> ]  </h2>
+<div class="TipText" style="width:700px;">
+<div class="TipContent">
+<center>
+<h1 class="YellowText">Webapplication (webapps) exploits and vulnerabilities category</h1>
+</center>
+<br/>
+				This category is full with vulnerabilities, which was found in web projects and web applications.
+			
+			</div>
+</div>
+</div><div class="ExploitTable">
+<div class="ExploitTableHead">
+<div>-::DATE</div>
+<div>-::DESCRIPTION</div>
+<div>-::TYPE</div>
+<div>-::HITS</div>
+<div>-::RISK</div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div>-::GOLD</div>
+<div>-::AUTHOR</div>
+</div>
+</div>
+<div class="ExploitTableContent">
+<div class="td"><a href="/date/17-10-2016">17-10-2016</a></div>
+<div class="td allow_tip YellowText "><h3><a href="/exploit/description/25808">Pluck 4.7.3 - (Delete Files) CSRF Vulnerability</a></h3>
+<div class="TipText"><div class="tips_comments"><div class="tips_content">Comments:</div> <div class="tips_value">0</div></div></div>
+</div>
+<div class="td"><a href="/platforms/php">php</a></div>
+<div class="td">4</div>
+<div class="td allow_tip"><img src="/img/risk/critlow_1.gif"/>
+<div class="TipText">
+<div class="tips_risk_color_1">Security Risk Low</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/related/25808">R</a>
+<div class="TipText">
+<div class="tips_related">Related releases</div>
+</div>
+</div>
+<div class="td allow_tip" style="padding:0px;"><a href="/download/25808">D</a>
+<div class="TipText">
+<div class="tips_download">Download</div>
+</div>
+</div>
+<div class="td ">-
+					<div class="TipText">
+</div>
+</div>
+<div class="td allow_tip"> <img src="/img/check.png"/>
+<div class="TipText">
+<div class="tips_verified_1">Verified by 0day Admin</div>
+</div>
+</div>
+<div class="td allow_tip">free
+					<div class="TipText">
+<div class="tips_price_0">You can open this exploit for free</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/author/27461">ZwX</a>
+<div class="TipText">
+<div class="tips_exploits"><div class="tips_content">Exploits:</div> <div class="tips_value_big">41</div></div>
+<div class="tips_bl"><div class="tips_content">BusinessLevel:</div> <div class="tips_value_big">3</div></div>
+<div class="tips_warnings"><div class="tips_content">Warnings:</div> <div class="tips_value_big">0</div></div>
+</div>
+</div>
+</div>
+<div class="ExploitTableContent">
+<div class="td"><a href="/date/15-10-2016">15-10-2016</a></div>
+<div class="td allow_tip "><h3><a href="/exploit/description/25575">WordPress Newsletter 4.6.0 Cross Site Request Forgery / Cross Site Scripting</a></h3>
+<div class="TipText"><div class="tips_comments"><div class="tips_content">Comments:</div> <div class="tips_value">0</div></div></div>
+</div>
+<div class="td"><a href="/platforms/php">php</a></div>
+<div class="td">10</div>
+<div class="td allow_tip"><img src="/img/risk/critlow_2.gif"/>
+<div class="TipText">
+<div class="tips_risk_color_2">Security Risk Medium</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/related/25575">R</a>
+<div class="TipText">
+<div class="tips_related">Related releases</div>
+</div>
+</div>
+<div class="td allow_tip" style="padding:0px;"><a href="/download/25575">D</a>
+<div class="TipText">
+<div class="tips_download">Download</div>
+</div>
+</div>
+<div class="td ">-
+					<div class="TipText">
+</div>
+</div>
+<div class="td allow_tip"> <img src="/img/check.png"/>
+<div class="TipText">
+<div class="tips_verified_1">Verified by 0day Admin</div>
+</div>
+</div>
+<div class="td allow_tip">free
+					<div class="TipText">
+<div class="tips_price_0">You can open this exploit for free</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/author/3020">Keith Lee</a>
+<div class="TipText">
+<div class="tips_exploits"><div class="tips_content">Exploits:</div> <div class="tips_value_big">2</div></div>
+<div class="tips_bl"><div class="tips_content">BusinessLevel:</div> <div class="tips_value_big">3</div></div>
+<div class="tips_warnings"><div class="tips_content">Warnings:</div> <div class="tips_value_big">0</div></div>
+</div>
+</div>
+</div>
+<div class="ExploitTableContent">
+<div class="td"><a href="/date/14-10-2016">14-10-2016</a></div>
+<div class="td allow_tip "><h3><a href="/exploit/description/25573">YouTube Automated CMS 1.0.7 - Cross-Site Request Forgery / Persistent Cross-Site Scripting</a></h3>
+<div class="TipText"><div class="tips_comments"><div class="tips_content">Comments:</div> <div class="tips_value">0</div></div></div>
+</div>
+<div class="td"><a href="/platforms/php">php</a></div>
+<div class="td">6</div>
+<div class="td allow_tip"><img src="/img/risk/critlow_2.gif"/>
+<div class="TipText">
+<div class="tips_risk_color_2">Security Risk Medium</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/related/25573">R</a>
+<div class="TipText">
+<div class="tips_related">Related releases</div>
+</div>
+</div>
+<div class="td allow_tip" style="padding:0px;"><a href="/download/25573">D</a>
+<div class="TipText">
+<div class="tips_download">Download</div>
+</div>
+</div>
+<div class="td ">-
+					<div class="TipText">
+</div>
+</div>
+<div class="td allow_tip"> <img src="/img/check.png"/>
+<div class="TipText">
+<div class="tips_verified_1">Verified by 0day Admin</div>
+</div>
+</div>
+<div class="td allow_tip">free
+					<div class="TipText">
+<div class="tips_price_0">You can open this exploit for free</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/author/28229">Arbin Godar</a>
+<div class="TipText">
+<div class="tips_exploits"><div class="tips_content">Exploits:</div> <div class="tips_value_big">2</div></div>
+<div class="tips_bl"><div class="tips_content">BusinessLevel:</div> <div class="tips_value_big">0</div></div>
+<div class="tips_warnings"><div class="tips_content">Warnings:</div> <div class="tips_value_big">0</div></div>
+</div>
+</div>
+</div>
+<div class="ExploitTableContent">
+<div class="td"><a href="/date/14-10-2016">14-10-2016</a></div>
+<div class="td allow_tip "><h3><a href="/exploit/description/25555">Thatware 0.4.6 - SQL Injection</a></h3>
+<div class="TipText"><div class="tips_comments"><div class="tips_content">Comments:</div> <div class="tips_value">0</div></div></div>
+</div>
+<div class="td"><a href="/platforms/php">php</a></div>
+<div class="td">5</div>
+<div class="td allow_tip"><img src="/img/risk/critlow_3.gif"/>
+<div class="TipText">
+<div class="tips_risk_color_3">Security Risk High</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/related/25555">R</a>
+<div class="TipText">
+<div class="tips_related">Related releases</div>
+</div>
+</div>
+<div class="td allow_tip" style="padding:0px;"><a href="/download/25555">D</a>
+<div class="TipText">
+<div class="tips_download">Download</div>
+</div>
+</div>
+<div class="td ">-
+					<div class="TipText">
+</div>
+</div>
+<div class="td allow_tip"> <img src="/img/check.png"/>
+<div class="TipText">
+<div class="tips_verified_1">Verified by 0day Admin</div>
+</div>
+</div>
+<div class="td allow_tip">free
+					<div class="TipText">
+<div class="tips_price_0">You can open this exploit for free</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/author/28185">Besim</a>
+<div class="TipText">
+<div class="tips_exploits"><div class="tips_content">Exploits:</div> <div class="tips_value_big">13</div></div>
+<div class="tips_bl"><div class="tips_content">BusinessLevel:</div> <div class="tips_value_big">1</div></div>
+<div class="tips_warnings"><div class="tips_content">Warnings:</div> <div class="tips_value_big">0</div></div>
+</div>
+</div>
+</div>
+<div class="ExploitTableContent">
+<div class="td"><a href="/date/14-10-2016">14-10-2016</a></div>
+<div class="td allow_tip "><h3><a href="/exploit/description/25554">RSS News AutoPilot Script 1.0.1 / 3.1.0 - Admin Panel Authentication Bypass</a></h3>
+<div class="TipText"><div class="tips_comments"><div class="tips_content">Comments:</div> <div class="tips_value">0</div></div></div>
+</div>
+<div class="td"><a href="/platforms/php">php</a></div>
+<div class="td">5</div>
+<div class="td allow_tip"><img src="/img/risk/critlow_3.gif"/>
+<div class="TipText">
+<div class="tips_risk_color_3">Security Risk High</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/related/25554">R</a>
+<div class="TipText">
+<div class="tips_related">Related releases</div>
+</div>
+</div>
+<div class="td allow_tip" style="padding:0px;"><a href="/download/25554">D</a>
+<div class="TipText">
+<div class="tips_download">Download</div>
+</div>
+</div>
+<div class="td ">-
+					<div class="TipText">
+</div>
+</div>
+<div class="td allow_tip"> <img src="/img/check.png"/>
+<div class="TipText">
+<div class="tips_verified_1">Verified by 0day Admin</div>
+</div>
+</div>
+<div class="td allow_tip">free
+					<div class="TipText">
+<div class="tips_price_0">You can open this exploit for free</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/author/28229">Arbin Godar</a>
+<div class="TipText">
+<div class="tips_exploits"><div class="tips_content">Exploits:</div> <div class="tips_value_big">2</div></div>
+<div class="tips_bl"><div class="tips_content">BusinessLevel:</div> <div class="tips_value_big">0</div></div>
+<div class="tips_warnings"><div class="tips_content">Warnings:</div> <div class="tips_value_big">0</div></div>
+</div>
+</div>
+</div>
+<div class="ExploitTableContent">
+<div class="td"><a href="/date/14-10-2016">14-10-2016</a></div>
+<div class="td allow_tip "><h3><a href="/exploit/description/25553">Colorful Blog - Stored Cross Site Scripting</a></h3>
+<div class="TipText"><div class="tips_comments"><div class="tips_content">Comments:</div> <div class="tips_value">0</div></div></div>
+</div>
+<div class="td"><a href="/platforms/php">php</a></div>
+<div class="td">2</div>
+<div class="td allow_tip"><img src="/img/risk/critlow_2.gif"/>
+<div class="TipText">
+<div class="tips_risk_color_2">Security Risk Medium</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/related/25553">R</a>
+<div class="TipText">
+<div class="tips_related">Related releases</div>
+</div>
+</div>
+<div class="td allow_tip" style="padding:0px;"><a href="/download/25553">D</a>
+<div class="TipText">
+<div class="tips_download">Download</div>
+</div>
+</div>
+<div class="td ">-
+					<div class="TipText">
+</div>
+</div>
+<div class="td allow_tip"> <img src="/img/check.png"/>
+<div class="TipText">
+<div class="tips_verified_1">Verified by 0day Admin</div>
+</div>
+</div>
+<div class="td allow_tip">free
+					<div class="TipText">
+<div class="tips_price_0">You can open this exploit for free</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/author/28185">Besim</a>
+<div class="TipText">
+<div class="tips_exploits"><div class="tips_content">Exploits:</div> <div class="tips_value_big">13</div></div>
+<div class="tips_bl"><div class="tips_content">BusinessLevel:</div> <div class="tips_value_big">1</div></div>
+<div class="tips_warnings"><div class="tips_content">Warnings:</div> <div class="tips_value_big">0</div></div>
+</div>
+</div>
+</div>
+<div class="ExploitTableContent">
+<div class="td"><a href="/date/14-10-2016">14-10-2016</a></div>
+<div class="td allow_tip "><h3><a href="/exploit/description/25552">Colorful Blog - Cross-Site Request Forgery (Change Admin Password)</a></h3>
+<div class="TipText"><div class="tips_comments"><div class="tips_content">Comments:</div> <div class="tips_value">0</div></div></div>
+</div>
+<div class="td"><a href="/platforms/php">php</a></div>
+<div class="td">2</div>
+<div class="td allow_tip"><img src="/img/risk/critlow_1.gif"/>
+<div class="TipText">
+<div class="tips_risk_color_1">Security Risk Low</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/related/25552">R</a>
+<div class="TipText">
+<div class="tips_related">Related releases</div>
+</div>
+</div>
+<div class="td allow_tip" style="padding:0px;"><a href="/download/25552">D</a>
+<div class="TipText">
+<div class="tips_download">Download</div>
+</div>
+</div>
+<div class="td ">-
+					<div class="TipText">
+</div>
+</div>
+<div class="td allow_tip"> <img src="/img/check.png"/>
+<div class="TipText">
+<div class="tips_verified_1">Verified by 0day Admin</div>
+</div>
+</div>
+<div class="td allow_tip">free
+					<div class="TipText">
+<div class="tips_price_0">You can open this exploit for free</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/author/28185">Besim</a>
+<div class="TipText">
+<div class="tips_exploits"><div class="tips_content">Exploits:</div> <div class="tips_value_big">13</div></div>
+<div class="tips_bl"><div class="tips_content">BusinessLevel:</div> <div class="tips_value_big">1</div></div>
+<div class="tips_warnings"><div class="tips_content">Warnings:</div> <div class="tips_value_big">0</div></div>
+</div>
+</div>
+</div>
+<div class="ExploitTableContent">
+<div class="td"><a href="/date/13-10-2016">13-10-2016</a></div>
+<div class="td allow_tip "><h3><a href="/exploit/description/25535">Simple Blog PHP 2.0 - SQL Injection</a></h3>
+<div class="TipText"><div class="tips_comments"><div class="tips_content">Comments:</div> <div class="tips_value">0</div></div></div>
+</div>
+<div class="td"><a href="/platforms/php">php</a></div>
+<div class="td">7</div>
+<div class="td allow_tip"><img src="/img/risk/critlow_3.gif"/>
+<div class="TipText">
+<div class="tips_risk_color_3">Security Risk High</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/related/25535">R</a>
+<div class="TipText">
+<div class="tips_related">Related releases</div>
+</div>
+</div>
+<div class="td allow_tip" style="padding:0px;"><a href="/download/25535">D</a>
+<div class="TipText">
+<div class="tips_download">Download</div>
+</div>
+</div>
+<div class="td ">-
+					<div class="TipText">
+</div>
+</div>
+<div class="td allow_tip"> <img src="/img/check.png"/>
+<div class="TipText">
+<div class="tips_verified_1">Verified by 0day Admin</div>
+</div>
+</div>
+<div class="td allow_tip">free
+					<div class="TipText">
+<div class="tips_price_0">You can open this exploit for free</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/author/27080">Ehsan Hosseini</a>
+<div class="TipText">
+<div class="tips_exploits"><div class="tips_content">Exploits:</div> <div class="tips_value_big">6</div></div>
+<div class="tips_bl"><div class="tips_content">BusinessLevel:</div> <div class="tips_value_big">1</div></div>
+<div class="tips_warnings"><div class="tips_content">Warnings:</div> <div class="tips_value_big">0</div></div>
+</div>
+</div>
+</div>
+<div class="spacer"></div><div class="category_title allow_tip_big">
+<div class="tip_big_position"></div>
+<h2 class="">[ <a href="/dos">dos / poc</a> ]  </h2>
+<div class="TipText" style="width:700px;">
+<div class="TipContent">
+<center>
+<h1 class="YellowText">DOS exploits and vulnerabilities category</h1>
+</center>
+<br/>
+<span class="YellowText">PoC DoS (denial of service exploit)</span> it exploits remote steps to check the resistance on the affected server or software denial of service vulnerability.
+				The purpose of these attacks is to check the server or the software for resistance.
+				<br/><br/>
+<span class="YellowText">PoC (Proof Of Concept exploit)</span> An attack against a computer or network that is performed only to prove that it can be done. 
+				It generally does not cause any harm, but shows how a hacker can take advantage of a vulnerability in the software or possibly the hardware.
+			
+			</div>
+</div>
+</div><div class="ExploitTable">
+<div class="ExploitTableHead">
+<div>-::DATE</div>
+<div>-::DESCRIPTION</div>
+<div>-::TYPE</div>
+<div>-::HITS</div>
+<div>-::RISK</div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div>-::GOLD</div>
+<div>-::AUTHOR</div>
+</div>
+</div>
+<div class="ExploitTableContent">
+<div class="td"><a href="/date/13-10-2016">13-10-2016</a></div>
+<div class="td allow_tip "><h3><a href="/exploit/description/25540">VOX Music Player 2.8.8 - '.pls' Denail of Service</a></h3>
+<div class="TipText"><div class="tips_comments"><div class="tips_content">Comments:</div> <div class="tips_value">0</div></div></div>
+</div>
+<div class="td"><a href="/platforms/osX">macOS</a></div>
+<div class="td">1</div>
+<div class="td allow_tip"><img src="/img/risk/critlow_2.gif"/>
+<div class="TipText">
+<div class="tips_risk_color_2">Security Risk Medium</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/related/25540">R</a>
+<div class="TipText">
+<div class="tips_related">Related releases</div>
+</div>
+</div>
+<div class="td allow_tip" style="padding:0px;"><a href="/download/25540">D</a>
+<div class="TipText">
+<div class="tips_download">Download</div>
+</div>
+</div>
+<div class="td ">-
+					<div class="TipText">
+</div>
+</div>
+<div class="td allow_tip"> <img src="/img/check.png"/>
+<div class="TipText">
+<div class="tips_verified_1">Verified by 0day Admin</div>
+</div>
+</div>
+<div class="td allow_tip">free
+					<div class="TipText">
+<div class="tips_price_0">You can open this exploit for free</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/author/27809">Antonio Z.</a>
+<div class="TipText">
+<div class="tips_exploits"><div class="tips_content">Exploits:</div> <div class="tips_value_big">2</div></div>
+<div class="tips_bl"><div class="tips_content">BusinessLevel:</div> <div class="tips_value_big">1</div></div>
+<div class="tips_warnings"><div class="tips_content">Warnings:</div> <div class="tips_value_big">0</div></div>
+</div>
+</div>
+</div>
+<div class="ExploitTableContent">
+<div class="td"><a href="/date/13-10-2016">13-10-2016</a></div>
+<div class="td allow_tip "><h3><a href="/exploit/description/25510">Cisco Webex Player T29.10 - '.WRF' Use-After-Free Memory Corruption</a></h3>
+<div class="TipText"><div class="tips_comments"><div class="tips_content">Comments:</div> <div class="tips_value">0</div></div></div>
+</div>
+<div class="td"><a href="/platforms/windows">windows</a></div>
+<div class="td">0</div>
+<div class="td allow_tip"><img src="/img/risk/critlow_2.gif"/>
+<div class="TipText">
+<div class="tips_risk_color_2">Security Risk Medium</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/related/25510">R</a>
+<div class="TipText">
+<div class="tips_related">Related releases</div>
+</div>
+</div>
+<div class="td allow_tip" style="padding:0px;"><a href="/download/25510">D</a>
+<div class="TipText">
+<div class="tips_download">Download</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="#">C</a>
+<div class="TipText">
+						CVE-2016-1464<br/>
+</div>
+</div>
+<div class="td allow_tip"> <img src="/img/check.png"/>
+<div class="TipText">
+<div class="tips_verified_1">Verified by 0day Admin</div>
+</div>
+</div>
+<div class="td allow_tip">free
+					<div class="TipText">
+<div class="tips_price_0">You can open this exploit for free</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/author/28216">COSIG</a>
+<div class="TipText">
+<div class="tips_exploits"><div class="tips_content">Exploits:</div> <div class="tips_value_big">3</div></div>
+<div class="tips_bl"><div class="tips_content">BusinessLevel:</div> <div class="tips_value_big">0</div></div>
+<div class="tips_warnings"><div class="tips_content">Warnings:</div> <div class="tips_value_big">0</div></div>
+</div>
+</div>
+</div>
+<div class="ExploitTableContent">
+<div class="td"><a href="/date/13-10-2016">13-10-2016</a></div>
+<div class="td allow_tip "><h3><a href="/exploit/description/25509">Cisco Webex Player T29.10 - '.ARF' Out-of-Bounds Memory Corruption</a></h3>
+<div class="TipText"><div class="tips_comments"><div class="tips_content">Comments:</div> <div class="tips_value">0</div></div></div>
+</div>
+<div class="td"><a href="/platforms/windows">windows</a></div>
+<div class="td">0</div>
+<div class="td allow_tip"><img src="/img/risk/critlow_2.gif"/>
+<div class="TipText">
+<div class="tips_risk_color_2">Security Risk Medium</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/related/25509">R</a>
+<div class="TipText">
+<div class="tips_related">Related releases</div>
+</div>
+</div>
+<div class="td allow_tip" style="padding:0px;"><a href="/download/25509">D</a>
+<div class="TipText">
+<div class="tips_download">Download</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="#">C</a>
+<div class="TipText">
+						CVE-2016-1415<br/>
+</div>
+</div>
+<div class="td allow_tip"> <img src="/img/check.png"/>
+<div class="TipText">
+<div class="tips_verified_1">Verified by 0day Admin</div>
+</div>
+</div>
+<div class="td allow_tip">free
+					<div class="TipText">
+<div class="tips_price_0">You can open this exploit for free</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/author/28216">COSIG</a>
+<div class="TipText">
+<div class="tips_exploits"><div class="tips_content">Exploits:</div> <div class="tips_value_big">3</div></div>
+<div class="tips_bl"><div class="tips_content">BusinessLevel:</div> <div class="tips_value_big">0</div></div>
+<div class="tips_warnings"><div class="tips_content">Warnings:</div> <div class="tips_value_big">0</div></div>
+</div>
+</div>
+</div>
+<div class="ExploitTableContent">
+<div class="td"><a href="/date/12-10-2016">12-10-2016</a></div>
+<div class="td allow_tip "><h3><a href="/exploit/description/25507">Adobe Flash Player 23.0.0.162 - '.SWF' ConstantPool Critical Memory Corruption</a></h3>
+<div class="TipText"><div class="tips_comments"><div class="tips_content">Comments:</div> <div class="tips_value">0</div></div></div>
+</div>
+<div class="td"><a href="/platforms/multiple">multiple</a></div>
+<div class="td">1</div>
+<div class="td allow_tip"><img src="/img/risk/critlow_3.gif"/>
+<div class="TipText">
+<div class="tips_risk_color_3">Security Risk High</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/related/25507">R</a>
+<div class="TipText">
+<div class="tips_related">Related releases</div>
+</div>
+</div>
+<div class="td allow_tip" style="padding:0px;"><a href="/download/25507">D</a>
+<div class="TipText">
+<div class="tips_download">Download</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="#">C</a>
+<div class="TipText">
+						CVE-2016-4273<br/>
+</div>
+</div>
+<div class="td allow_tip"> <img src="/img/check.png"/>
+<div class="TipText">
+<div class="tips_verified_1">Verified by 0day Admin</div>
+</div>
+</div>
+<div class="td allow_tip">free
+					<div class="TipText">
+<div class="tips_price_0">You can open this exploit for free</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/author/28216">COSIG</a>
+<div class="TipText">
+<div class="tips_exploits"><div class="tips_content">Exploits:</div> <div class="tips_value_big">3</div></div>
+<div class="tips_bl"><div class="tips_content">BusinessLevel:</div> <div class="tips_value_big">0</div></div>
+<div class="tips_warnings"><div class="tips_content">Warnings:</div> <div class="tips_value_big">0</div></div>
+</div>
+</div>
+</div>
+<div class="ExploitTableContent">
+<div class="td"><a href="/date/12-10-2016">12-10-2016</a></div>
+<div class="td allow_tip "><h3><a href="/exploit/description/25506">Android - Binder Generic ASLR Leak Vulnerability</a></h3>
+<div class="TipText"><div class="tips_comments"><div class="tips_content">Comments:</div> <div class="tips_value">0</div></div></div>
+</div>
+<div class="td"><a href="/platforms/Android">Android</a></div>
+<div class="td">0</div>
+<div class="td allow_tip"><img src="/img/risk/critlow_3.gif"/>
+<div class="TipText">
+<div class="tips_risk_color_3">Security Risk High</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/related/25506">R</a>
+<div class="TipText">
+<div class="tips_related">Related releases</div>
+</div>
+</div>
+<div class="td allow_tip" style="padding:0px;"><a href="/download/25506">D</a>
+<div class="TipText">
+<div class="tips_download">Download</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="#">C</a>
+<div class="TipText">
+						CVE-2016-6689<br/>
+</div>
+</div>
+<div class="td allow_tip"> <img src="/img/check.png"/>
+<div class="TipText">
+<div class="tips_verified_1">Verified by 0day Admin</div>
+</div>
+</div>
+<div class="td allow_tip">free
+					<div class="TipText">
+<div class="tips_price_0">You can open this exploit for free</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/author/24646">Google Security Research</a>
+<div class="TipText">
+<div class="tips_exploits"><div class="tips_content">Exploits:</div> <div class="tips_value_big">176</div></div>
+<div class="tips_bl"><div class="tips_content">BusinessLevel:</div> <div class="tips_value_big">10</div></div>
+<div class="tips_warnings"><div class="tips_content">Warnings:</div> <div class="tips_value_big">0</div></div>
+</div>
+</div>
+</div>
+<div class="ExploitTableContent">
+<div class="td"><a href="/date/12-10-2016">12-10-2016</a></div>
+<div class="td allow_tip "><h3><a href="/exploit/description/25493">Android - 'gpsOneXtra' Data Files Denial of Service</a></h3>
+<div class="TipText"><div class="tips_comments"><div class="tips_content">Comments:</div> <div class="tips_value">0</div></div></div>
+</div>
+<div class="td"><a href="/platforms/Android">Android</a></div>
+<div class="td">0</div>
+<div class="td allow_tip"><img src="/img/risk/critlow_2.gif"/>
+<div class="TipText">
+<div class="tips_risk_color_2">Security Risk Medium</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/related/25493">R</a>
+<div class="TipText">
+<div class="tips_related">Related releases</div>
+</div>
+</div>
+<div class="td allow_tip" style="padding:0px;"><a href="/download/25493">D</a>
+<div class="TipText">
+<div class="tips_download">Download</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="#">C</a>
+<div class="TipText">
+						CVE-2016-5348<br/>
+</div>
+</div>
+<div class="td allow_tip"> <img src="/img/check.png"/>
+<div class="TipText">
+<div class="tips_verified_1">Verified by 0day Admin</div>
+</div>
+</div>
+<div class="td allow_tip">free
+					<div class="TipText">
+<div class="tips_price_0">You can open this exploit for free</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/author/28214">Nightwatch Cybersecurity Research</a>
+<div class="TipText">
+<div class="tips_exploits"><div class="tips_content">Exploits:</div> <div class="tips_value_big">1</div></div>
+<div class="tips_bl"><div class="tips_content">BusinessLevel:</div> <div class="tips_value_big">0</div></div>
+<div class="tips_warnings"><div class="tips_content">Warnings:</div> <div class="tips_value_big">0</div></div>
+</div>
+</div>
+</div>
+<div class="ExploitTableContent">
+<div class="td"><a href="/date/04-10-2016">04-10-2016</a></div>
+<div class="td allow_tip "><h3><a href="/exploit/description/25325">Bind 9 DNS Server - Denial of Service Exploit</a></h3>
+<div class="TipText"><div class="tips_comments"><div class="tips_content">Comments:</div> <div class="tips_value">0</div></div></div>
+</div>
+<div class="td"><a href="/platforms/multiple">multiple</a></div>
+<div class="td">279</div>
+<div class="td allow_tip"><img src="/img/risk/critlow_3.gif"/>
+<div class="TipText">
+<div class="tips_risk_color_3">Security Risk High</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/related/25325">R</a>
+<div class="TipText">
+<div class="tips_related">Related releases</div>
+</div>
+</div>
+<div class="td allow_tip" style="padding:0px;"><a href="/download/25325">D</a>
+<div class="TipText">
+<div class="tips_download">Download</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="#">C</a>
+<div class="TipText">
+						CVE-2016-2776<br/>
+</div>
+</div>
+<div class="td allow_tip"> <img src="/img/check.png"/>
+<div class="TipText">
+<div class="tips_verified_1">Verified by 0day Admin</div>
+</div>
+</div>
+<div class="td allow_tip">free
+					<div class="TipText">
+<div class="tips_price_0">You can open this exploit for free</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/author/28163">Infobyte</a>
+<div class="TipText">
+<div class="tips_exploits"><div class="tips_content">Exploits:</div> <div class="tips_value_big">1</div></div>
+<div class="tips_bl"><div class="tips_content">BusinessLevel:</div> <div class="tips_value_big">0</div></div>
+<div class="tips_warnings"><div class="tips_content">Warnings:</div> <div class="tips_value_big">0</div></div>
+</div>
+</div>
+</div>
+<div class="ExploitTableContent">
+<div class="td"><a href="/date/03-10-2016">03-10-2016</a></div>
+<div class="td allow_tip "><h3><a href="/exploit/description/25250">Android - Insufficient Binder Message Verification Pointer Leak Vulnerability</a></h3>
+<div class="TipText"><div class="tips_comments"><div class="tips_content">Comments:</div> <div class="tips_value">0</div></div></div>
+</div>
+<div class="td"><a href="/platforms/Android">Android</a></div>
+<div class="td">226</div>
+<div class="td allow_tip"><img src="/img/risk/critlow_3.gif"/>
+<div class="TipText">
+<div class="tips_risk_color_3">Security Risk High</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/related/25250">R</a>
+<div class="TipText">
+<div class="tips_related">Related releases</div>
+</div>
+</div>
+<div class="td allow_tip" style="padding:0px;"><a href="/download/25250">D</a>
+<div class="TipText">
+<div class="tips_download">Download</div>
+</div>
+</div>
+<div class="td ">-
+					<div class="TipText">
+</div>
+</div>
+<div class="td allow_tip"> <img src="/img/check.png"/>
+<div class="TipText">
+<div class="tips_verified_1">Verified by 0day Admin</div>
+</div>
+</div>
+<div class="td allow_tip">free
+					<div class="TipText">
+<div class="tips_price_0">You can open this exploit for free</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/author/24646">Google Security Research</a>
+<div class="TipText">
+<div class="tips_exploits"><div class="tips_content">Exploits:</div> <div class="tips_value_big">176</div></div>
+<div class="tips_bl"><div class="tips_content">BusinessLevel:</div> <div class="tips_value_big">10</div></div>
+<div class="tips_warnings"><div class="tips_content">Warnings:</div> <div class="tips_value_big">0</div></div>
+</div>
+</div>
+</div>
+<div class="spacer"></div><div class="category_title allow_tip_big">
+<div class="tip_big_position"></div>
+<h2 class="">[ <a href="/shellcode">shellcode</a> ]  </h2>
+<div class="TipText" style="width:700px;">
+<div class="TipContent">
+<center>
+<h1 class="YellowText">Shellcode category</h1>
+</center>
+<br/>
+
+				In computer security, a shellcode is a small piece of code used as the payload in the exploitation of a software vulnerability. 
+				It is called "shellcode" because it typically starts a command shell from which the attacker can control the compromised machine, but any piece of code that performs a similar task can be called shellcode. 
+				Because the function of a payload is not limited to merely spawning a shell, some have suggested that the name shellcode is insufficient. 
+				Shellcode is commonly written in machine code.
+				<br/><br/>
+<strong>Classification:</strong><br/>
+				There are several methods of classifying exploits. The most common is by how the exploit contacts the vulnerable software. 
+				A remote exploit works over a network and exploits the security vulnerability without any prior access to the vulnerable system. 
+				A local exploit requires prior access to the vulnerable system and usually increases the privileges of the person running the exploit past those granted by the system administrator. 
+				Exploits against client applications also exist, usually consisting of modified servers that send an exploit if accessed with a client application. 
+				Exploits against client applications may also require some interaction with the user and thus may be used in combination with the social engineering method. 
+				Another classification is by the action against the vulnerable system; unauthorized data access, arbitrary code execution, and denial of service are examples. 
+				Many exploits are designed to provide superuser-level access to a computer system. 
+				However, it is also possible to use several exploits, first to gain low-level access, then to escalate privileges repeatedly until one reaches root. 
+				Normally a single exploit can only take advantage of a specific software vulnerability. 
+				Often, when an exploit is published, the vulnerability is fixed through a patch and the exploit becomes obsolete until newer versions of the software become available
+				Shellcodes any types.
+			
+			</div>
+</div>
+</div><div class="ExploitTable">
+<div class="ExploitTableHead">
+<div>-::DATE</div>
+<div>-::DESCRIPTION</div>
+<div>-::TYPE</div>
+<div>-::HITS</div>
+<div>-::RISK</div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div>-::GOLD</div>
+<div>-::AUTHOR</div>
+</div>
+</div>
+<div class="ExploitTableContent">
+<div class="td"><a href="/date/16-09-2016">16-09-2016</a></div>
+<div class="td allow_tip "><h3><a href="/exploit/description/24830">Cisco ASA - Authentication Bypass 'EXTRABACON' (Improved Shellcode) (69 bytes)</a></h3>
+<div class="TipText"><div class="tips_comments"><div class="tips_content">Comments:</div> <div class="tips_value">0</div></div></div>
+</div>
+<div class="td"><a href="/platforms/hardware">hardware</a></div>
+<div class="td">312</div>
+<div class="td allow_tip"><img src="/img/risk/critlow_3.gif"/>
+<div class="TipText">
+<div class="tips_risk_color_3">Security Risk High</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/related/24830">R</a>
+<div class="TipText">
+<div class="tips_related">Related releases</div>
+</div>
+</div>
+<div class="td allow_tip" style="padding:0px;"><a href="/download/24830">D</a>
+<div class="TipText">
+<div class="tips_download">Download</div>
+</div>
+</div>
+<div class="td ">-
+					<div class="TipText">
+</div>
+</div>
+<div class="td allow_tip"> <img src="/img/check.png"/>
+<div class="TipText">
+<div class="tips_verified_1">Verified by 0day Admin</div>
+</div>
+</div>
+<div class="td allow_tip">free
+					<div class="TipText">
+<div class="tips_price_0">You can open this exploit for free</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/author/24140">Sean Dillon</a>
+<div class="TipText">
+<div class="tips_exploits"><div class="tips_content">Exploits:</div> <div class="tips_value_big">4</div></div>
+<div class="tips_bl"><div class="tips_content">BusinessLevel:</div> <div class="tips_value_big">1</div></div>
+<div class="tips_warnings"><div class="tips_content">Warnings:</div> <div class="tips_value_big">0</div></div>
+</div>
+</div>
+</div>
+<div class="ExploitTableContent">
+<div class="td"><a href="/date/13-09-2016">13-09-2016</a></div>
+<div class="td allow_tip "><h3><a href="/exploit/description/24829">Windows/x86 - Password Protected TCP Bind Shell (637 bytes)</a></h3>
+<div class="TipText"><div class="tips_comments"><div class="tips_content">Comments:</div> <div class="tips_value">0</div></div></div>
+</div>
+<div class="td"><a href="/shellcode/win32">win32</a></div>
+<div class="td">287</div>
+<div class="td allow_tip"><img src="/img/risk/critlow_3.gif"/>
+<div class="TipText">
+<div class="tips_risk_color_3">Security Risk High</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/related/24829">R</a>
+<div class="TipText">
+<div class="tips_related">Related releases</div>
+</div>
+</div>
+<div class="td allow_tip" style="padding:0px;"><a href="/download/24829">D</a>
+<div class="TipText">
+<div class="tips_download">Download</div>
+</div>
+</div>
+<div class="td ">-
+					<div class="TipText">
+</div>
+</div>
+<div class="td allow_tip"> <img src="/img/check.png"/>
+<div class="TipText">
+<div class="tips_verified_1">Verified by 0day Admin</div>
+</div>
+</div>
+<div class="td allow_tip">free
+					<div class="TipText">
+<div class="tips_price_0">You can open this exploit for free</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/author/27995">Roziul Hasan Khan Shifat</a>
+<div class="TipText">
+<div class="tips_exploits"><div class="tips_content">Exploits:</div> <div class="tips_value_big">18</div></div>
+<div class="tips_bl"><div class="tips_content">BusinessLevel:</div> <div class="tips_value_big">1</div></div>
+<div class="tips_warnings"><div class="tips_content">Warnings:</div> <div class="tips_value_big">0</div></div>
+</div>
+</div>
+</div>
+<div class="ExploitTableContent">
+<div class="td"><a href="/date/08-09-2016">08-09-2016</a></div>
+<div class="td allow_tip "><h3><a href="/exploit/description/24828">Windows/x86 - Bind Shell TCP 4444 Shellcode (357 Bytes)</a></h3>
+<div class="TipText"><div class="tips_comments"><div class="tips_content">Comments:</div> <div class="tips_value">0</div></div></div>
+</div>
+<div class="td"><a href="/shellcode/win32">win32</a></div>
+<div class="td">227</div>
+<div class="td allow_tip"><img src="/img/risk/critlow_3.gif"/>
+<div class="TipText">
+<div class="tips_risk_color_3">Security Risk High</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/related/24828">R</a>
+<div class="TipText">
+<div class="tips_related">Related releases</div>
+</div>
+</div>
+<div class="td allow_tip" style="padding:0px;"><a href="/download/24828">D</a>
+<div class="TipText">
+<div class="tips_download">Download</div>
+</div>
+</div>
+<div class="td ">-
+					<div class="TipText">
+</div>
+</div>
+<div class="td allow_tip"> <img src="/img/check.png"/>
+<div class="TipText">
+<div class="tips_verified_1">Verified by 0day Admin</div>
+</div>
+</div>
+<div class="td allow_tip">free
+					<div class="TipText">
+<div class="tips_price_0">You can open this exploit for free</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/author/27995">Roziul Hasan Khan Shifat</a>
+<div class="TipText">
+<div class="tips_exploits"><div class="tips_content">Exploits:</div> <div class="tips_value_big">18</div></div>
+<div class="tips_bl"><div class="tips_content">BusinessLevel:</div> <div class="tips_value_big">1</div></div>
+<div class="tips_warnings"><div class="tips_content">Warnings:</div> <div class="tips_value_big">0</div></div>
+</div>
+</div>
+</div>
+<div class="ExploitTableContent">
+<div class="td"><a href="/date/05-09-2016">05-09-2016</a></div>
+<div class="td allow_tip "><h3><a href="/exploit/description/24827">Windows/x86 - Persistent Reverse Shell TCP (494 Bytes)</a></h3>
+<div class="TipText"><div class="tips_comments"><div class="tips_content">Comments:</div> <div class="tips_value">0</div></div></div>
+</div>
+<div class="td"><a href="/shellcode/win32">win32</a></div>
+<div class="td">217</div>
+<div class="td allow_tip"><img src="/img/risk/critlow_3.gif"/>
+<div class="TipText">
+<div class="tips_risk_color_3">Security Risk High</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/related/24827">R</a>
+<div class="TipText">
+<div class="tips_related">Related releases</div>
+</div>
+</div>
+<div class="td allow_tip" style="padding:0px;"><a href="/download/24827">D</a>
+<div class="TipText">
+<div class="tips_download">Download</div>
+</div>
+</div>
+<div class="td ">-
+					<div class="TipText">
+</div>
+</div>
+<div class="td allow_tip"> <img src="/img/check.png"/>
+<div class="TipText">
+<div class="tips_verified_1">Verified by 0day Admin</div>
+</div>
+</div>
+<div class="td allow_tip">free
+					<div class="TipText">
+<div class="tips_price_0">You can open this exploit for free</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/author/27995">Roziul Hasan Khan Shifat</a>
+<div class="TipText">
+<div class="tips_exploits"><div class="tips_content">Exploits:</div> <div class="tips_value_big">18</div></div>
+<div class="tips_bl"><div class="tips_content">BusinessLevel:</div> <div class="tips_value_big">1</div></div>
+<div class="tips_warnings"><div class="tips_content">Warnings:</div> <div class="tips_value_big">0</div></div>
+</div>
+</div>
+</div>
+<div class="ExploitTableContent">
+<div class="td"><a href="/date/18-08-2016">18-08-2016</a></div>
+<div class="td allow_tip "><h3><a href="/exploit/description/24826">Windows/x86 - InitiateSystemShutdownA() Shellcode (599 bytes)</a></h3>
+<div class="TipText"><div class="tips_comments"><div class="tips_content">Comments:</div> <div class="tips_value">0</div></div></div>
+</div>
+<div class="td"><a href="/shellcode/win32">win32</a></div>
+<div class="td">184</div>
+<div class="td allow_tip"><img src="/img/risk/critlow_2.gif"/>
+<div class="TipText">
+<div class="tips_risk_color_2">Security Risk Medium</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/related/24826">R</a>
+<div class="TipText">
+<div class="tips_related">Related releases</div>
+</div>
+</div>
+<div class="td allow_tip" style="padding:0px;"><a href="/download/24826">D</a>
+<div class="TipText">
+<div class="tips_download">Download</div>
+</div>
+</div>
+<div class="td ">-
+					<div class="TipText">
+</div>
+</div>
+<div class="td allow_tip"> <img src="/img/check.png"/>
+<div class="TipText">
+<div class="tips_verified_1">Verified by 0day Admin</div>
+</div>
+</div>
+<div class="td allow_tip">free
+					<div class="TipText">
+<div class="tips_price_0">You can open this exploit for free</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/author/27995">Roziul Hasan Khan Shifat</a>
+<div class="TipText">
+<div class="tips_exploits"><div class="tips_content">Exploits:</div> <div class="tips_value_big">18</div></div>
+<div class="tips_bl"><div class="tips_content">BusinessLevel:</div> <div class="tips_value_big">1</div></div>
+<div class="tips_warnings"><div class="tips_content">Warnings:</div> <div class="tips_value_big">0</div></div>
+</div>
+</div>
+</div>
+<div class="ExploitTableContent">
+<div class="td"><a href="/date/10-08-2016">10-08-2016</a></div>
+<div class="td allow_tip "><h3><a href="/exploit/description/24823">Linux/x86 - zsh TCP Bind Shell Port 9090 (96 bytes)</a></h3>
+<div class="TipText"><div class="tips_comments"><div class="tips_content">Comments:</div> <div class="tips_value">0</div></div></div>
+</div>
+<div class="td"><a href="/shellcode/linux/x86">linux/x86</a></div>
+<div class="td">200</div>
+<div class="td allow_tip"><img src="/img/risk/critlow_3.gif"/>
+<div class="TipText">
+<div class="tips_risk_color_3">Security Risk High</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/related/24823">R</a>
+<div class="TipText">
+<div class="tips_related">Related releases</div>
+</div>
+</div>
+<div class="td allow_tip" style="padding:0px;"><a href="/download/24823">D</a>
+<div class="TipText">
+<div class="tips_download">Download</div>
+</div>
+</div>
+<div class="td ">-
+					<div class="TipText">
+</div>
+</div>
+<div class="td allow_tip"> <img src="/img/check.png"/>
+<div class="TipText">
+<div class="tips_verified_1">Verified by 0day Admin</div>
+</div>
+</div>
+<div class="td allow_tip">free
+					<div class="TipText">
+<div class="tips_price_0">You can open this exploit for free</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/author/27994">thryb</a>
+<div class="TipText">
+<div class="tips_exploits"><div class="tips_content">Exploits:</div> <div class="tips_value_big">2</div></div>
+<div class="tips_bl"><div class="tips_content">BusinessLevel:</div> <div class="tips_value_big">0</div></div>
+<div class="tips_warnings"><div class="tips_content">Warnings:</div> <div class="tips_value_big">0</div></div>
+</div>
+</div>
+</div>
+<div class="ExploitTableContent">
+<div class="td"><a href="/date/10-08-2016">10-08-2016</a></div>
+<div class="td allow_tip "><h3><a href="/exploit/description/24822">Linux/x86 - zsh Reverse TCP Shellcode port 9090 (80 bytes)</a></h3>
+<div class="TipText"><div class="tips_comments"><div class="tips_content">Comments:</div> <div class="tips_value">0</div></div></div>
+</div>
+<div class="td"><a href="/shellcode/linux/x86">linux/x86</a></div>
+<div class="td">190</div>
+<div class="td allow_tip"><img src="/img/risk/critlow_3.gif"/>
+<div class="TipText">
+<div class="tips_risk_color_3">Security Risk High</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/related/24822">R</a>
+<div class="TipText">
+<div class="tips_related">Related releases</div>
+</div>
+</div>
+<div class="td allow_tip" style="padding:0px;"><a href="/download/24822">D</a>
+<div class="TipText">
+<div class="tips_download">Download</div>
+</div>
+</div>
+<div class="td ">-
+					<div class="TipText">
+</div>
+</div>
+<div class="td allow_tip"> <img src="/img/check.png"/>
+<div class="TipText">
+<div class="tips_verified_1">Verified by 0day Admin</div>
+</div>
+</div>
+<div class="td allow_tip">free
+					<div class="TipText">
+<div class="tips_price_0">You can open this exploit for free</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/author/27994">thryb</a>
+<div class="TipText">
+<div class="tips_exploits"><div class="tips_content">Exploits:</div> <div class="tips_value_big">2</div></div>
+<div class="tips_bl"><div class="tips_content">BusinessLevel:</div> <div class="tips_value_big">0</div></div>
+<div class="tips_warnings"><div class="tips_content">Warnings:</div> <div class="tips_value_big">0</div></div>
+</div>
+</div>
+</div>
+<div class="ExploitTableContent">
+<div class="td"><a href="/date/29-07-2016">29-07-2016</a></div>
+<div class="td allow_tip "><h3><a href="/exploit/description/25701">Windows/x86 - localhost Port Scanner Shellcode (556 bytes)</a></h3>
+<div class="TipText"><div class="tips_comments"><div class="tips_content">Comments:</div> <div class="tips_value">0</div></div></div>
+</div>
+<div class="td"><a href="/shellcode/win32">win32</a></div>
+<div class="td">0</div>
+<div class="td allow_tip"><img src="/img/risk/critlow_2.gif"/>
+<div class="TipText">
+<div class="tips_risk_color_2">Security Risk Medium</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/related/25701">R</a>
+<div class="TipText">
+<div class="tips_related">Related releases</div>
+</div>
+</div>
+<div class="td allow_tip" style="padding:0px;"><a href="/download/25701">D</a>
+<div class="TipText">
+<div class="tips_download">Download</div>
+</div>
+</div>
+<div class="td ">-
+					<div class="TipText">
+</div>
+</div>
+<div class="td allow_tip"> <img src="/img/check.png"/>
+<div class="TipText">
+<div class="tips_verified_1">Verified by 0day Admin</div>
+</div>
+</div>
+<div class="td allow_tip">free
+					<div class="TipText">
+<div class="tips_price_0">You can open this exploit for free</div>
+</div>
+</div>
+<div class="td allow_tip"><a href="/author/27995">Roziul Hasan Khan Shifat</a>
+<div class="TipText">
+<div class="tips_exploits"><div class="tips_content">Exploits:</div> <div class="tips_value_big">18</div></div>
+<div class="tips_bl"><div class="tips_content">BusinessLevel:</div> <div class="tips_value_big">1</div></div>
+<div class="tips_warnings"><div class="tips_content">Warnings:</div> <div class="tips_value_big">0</div></div>
+</div>
+</div>
+</div>
+<div class="spacer"></div><div class="center"><div class="border padding_2"> 
+							Exploits in [  October  ]: <span class="RedText">134</span> 
+							Critical: <font color="#FF0000">16</font> 
+							High: <font color="#FFBF00">75</font> 
+							Medium: <font color="#FFFF00">29</font> 
+							Low: <font color="green">14</font> 
+							
+							   
+							Best author of the month [ <a class="RedText" href="/author/28035">xBADGIRL21</a> ] 
+							   							
+							Exploits: 25826
+							     
+							Researchers: 28221
+						</div>
+<div class="spacer"></div>
+<div class="footer">
+<div id="qtip-growl-container"></div>
+<audio id="audio_receive_message" src="/receive_msg.mp3"></audio><div class="bugs" onclick='popup("popup_error")'></div> <div class="powered">
+<!--<img src='/img/joomla.png'>Powered by Joomla 3.3.0 -->
+</div>
+<h2><a href="/">0day Today Inj3ct0r Exploits Market and 0day Exploits Database</a></h2>
+				Inj3ct0r Exploit Database buy and sell exploits type (local, remote, DoS, PoC, etc.) <br/>Send all submissions to  <a href="mailto:mr.inj3ct0r@gmail.com">mr.inj3ct0r[at]gmail.com</a> <br/>
+				Copyright © 2008-2016 <a href="mailto:mr.inj3ct0r@gmail.com">Inj3ct0r Team</a>
+<div class="spacer"></div>
+<a class="" href="http://en.0day.today/">
+<img alt="English" src="/img/langs/en.png"/>
+<div class="TipText">
+									English
+								</div>
+</a> <a class="" href="http://ru.0day.today/">
+<img alt="Русский" src="/img/langs/ru.png"/>
+<div class="TipText">
+									Русский
+								</div>
+</a> <a class="" href="http://de.0day.today/">
+<img alt="Deutsch" src="/img/langs/de.png"/>
+<div class="TipText">
+									Deutsch
+								</div>
+</a> <a class="" href="http://tr.0day.today/">
+<img alt="Türkçe" src="/img/langs/tr.png"/>
+<div class="TipText">
+									Türkçe
+								</div>
+</a> <a class="" href="http://fr.0day.today/">
+<img alt="Français" src="/img/langs/fr.png"/>
+<div class="TipText">
+									Français
+								</div>
+</a> <a class="" href="http://it.0day.today/">
+<img alt="Italiano" src="/img/langs/it.png"/>
+<div class="TipText">
+									Italiano
+								</div>
+</a> <a class="" href="http://es.0day.today/">
+<img alt="Español" src="/img/langs/es.png"/>
+<div class="TipText">
+									Español
+								</div>
+</a> <a class="" href="http://ro.0day.today/">
+<img alt="Romania" src="/img/langs/ro.png"/>
+<div class="TipText">
+									Romania
+								</div>
+</a> <a class="" href="http://pl.0day.today/">
+<img alt="Polskie" src="/img/langs/pl.png"/>
+<div class="TipText">
+									Polskie
+								</div>
+</a> <a class="" href="http://ar.0day.today/">
+<img alt="العربية" src="/img/langs/ar.png"/>
+<div class="TipText">
+									العربية
+								</div>
+</a> <a class="" href="http://jp.0day.today/">
+<img alt="Japan" src="/img/langs/jp.png"/>
+<div class="TipText">
+									Japan
+								</div>
+</a> <a class="" href="http://cn.0day.today/">
+<img alt="China" src="/img/langs/cn.png"/>
+<div class="TipText">
+									China
+								</div>
+</a> 
+			</div>
+</div>
+<div class="popup_error" id="popup_error_div">
+<a class="popup" href="#popup_error_div" id="popup_error"> </a>
+<div class="exploit_title"><h1 class="YellowText">Report Error</h1></div>
+<form action="/error/check" class="error_form" method="post" name="auth">
+<div class="reg_line">
+<label><strong>Page URL with an error</strong></label><br/>
+					http://mvfjfugdwgc5uwho.onion/
+				</div>
+<div class="spacer"></div>
+<div class="reg_line">
+<label><strong>Comment</strong></label><br/>
+<textarea name="comment"></textarea>
+</div>
+<div class="reg_line">
+<div class="capcha">
+<label><strong>Enter symbols from capcha</strong></label><br/>
+<div class="border center relative ">
+<div><img id="capcha" src="/capcha"/></div>
+<div class="refresh allow_tip" onclick="change_capcha()">
+<div class="TipText">
+							Change capcha image
+						</div>
+</div>
+</div>
+<input id="capcha_input" name="capcha" type="text" value=""/>
+</div>
+</div>
+<div class="center">
+<input name="error_submit" type="hidden"/>
+<input class="button" name="error_submit" onclick='validateForm("Notification", "Please fill it following the rules and check if it is empty. Error in field:", this.form, "error"); return false' type="submit" value="Submit"/>
+</div>
+</form>
+</div>
+<div class="popup_error" id="report_error_finish_div">
+<a class="popup" href="#report_error_finish_div" id="popup_error_finish"> </a>
+<div class="exploit_title"><h1 class="YellowText">Report Error</h1></div>
+<div class="error_form">
+				Thank you for your error report. We will review it as soon as possible.
+			</div>
+</div>
+</div></body>
+</html>

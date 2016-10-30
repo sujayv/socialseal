@@ -1,0 +1,2 @@
+INFO[Thu Oct 20 19:51:36 2016]:Event loop received close message.
+{'Cookie': 'PHPSESSID=kdmq3e1o7gc0ibiq8dogebbrr4', 'User-Agent': 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.0.7) Gecko/2009021910 Firefox/3.0.7'}
