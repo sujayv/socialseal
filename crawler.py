@@ -13,6 +13,9 @@ from py2neo import authenticate, Graph, Path, Node, Relationship
 #website_node = Node("Website", name=website)
 #graph.create(website_node)
 
+website = "Oday-test"
+website_node = Node("Website", name=website)
+graph.create(website_node)
 renew_connection()
 url = "http://mvfjfugdwgc5uwho.onion/author/"
 authornodes = {}
