@@ -21,7 +21,7 @@ def requestget(url):
 def requestpost(url,cookie):
     _set_urlproxy()
     #headernew = {'Cookie':cookie,'Content-Type':'application/x-www-form-urlencoded','Content-Length':20}
-    headernew = {'Cookie':'PHPSESSID=7l9a4pj2edeac5u0eh33tcc081'}
+    headernew = {'Cookie':'PHPSESSID=t1j818772529tq5bme5opkoal1'}
     headernew.update(headers)
     #print headernew
     #dict = {'agree':'Yes, I agree'}
