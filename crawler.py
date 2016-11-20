@@ -3,24 +3,22 @@ from ip_renew import *
 from bs4 import BeautifulSoup
 import re
 from py2neo import authenticate, Graph, Path, Node, Relationship
+#from dbconnect import *
 
+authenticate("localhost:7474", "neo4j","password")
+graph = Graph("http://localhost:7474/db/data")
+labels = graph.node_labels
 
+website_name = "Oday-test"
+website_node = Node("Website", name=website_name)
 
-#authenticate("localhost:9066", "neo4j","password")
-#graph = Graph("http://localhost:7474/db/data")
+graph.merge(website_node)
 
-#website = "Oday-test"
-#website_node = Node("Website", name=website)
-#graph.create(website_node)
-
-website = "Oday-test"
-website_node = Node("Website", name=website)
-graph.create(website_node)
 renew_connection()
 url = "http://mvfjfugdwgc5uwho.onion/author/"
 authornodes = {}
 authortopics = {}
-for i in range(0,2):
+for i in range(0,3):
 	forum = requestpost(url+(str)(i),"")
 	soup = BeautifulSoup(forum.read(),'lxml')
 	#print soup
@@ -95,21 +93,34 @@ for i in range(0,2):
 
 
 #####Printing the author description table####
-file = open("output.txt","a")
+#file = open("output.txt","a")
 template = "{0:70}:{1:10}"
 templateauthor = "{0:15}:{1:20}"
 for key in authornodes.keys():
-	
-	file.write("***************************************\n")
+	print "***********************"
 	authors = authornodes.get(key)
+	#print 'Author '+ str(key)
+	#print value + " : \t" + str(temp.get(value))
+	author_name = str(authors.get("Author"))
+	author_node = Node("author",name=author_name,BL=str(authors.get("BL")),Readers=str(authors.get("Readers")),Exploits=str(authors.get("Exploits")),Registration_date=str(authors.get("Reg date")))
+	graph.merge(author_node)
+	graph.create(Relationship(website_node,"has_author",author_node))
+	#file.write("***************************************\n")
+	#authors = authornodes.get(key)
 	topic = authortopics.get(key)
-	file.write('Author '+ str(key) + "\n")
-	for value in authors.keys():
+	#print str(topic.get("Platform"))
+	#file.write('Author '+ str(key) + "\n")
+	#for value in authors.keys():
 		#print value + " : \t" + str(authors.get(value))
-		file.write(templateauthor.format(value,authors.get(value))+"\n")
+		#file.write(templateauthor.format(value,authors.get(value))+"\n")
 	#print "Topics:"
 	#print "Name \t" + "Platform"
-	file.write(template.format("Topics","Platform")+"\n")
-	for name in topic.keys():
-		#print name + "\t" + topic.get(name)
-		file.write(template.format(name,topic.get(name))+"\n")
+	#file.write(template.format("Topics","Platform")+"\n")
+	for name1 in topic.keys():
+		#print topic.get(name)
+		print "**********************"
+		topic_node = Node("topic",name=topic.get(name1))
+		print topic_node
+		graph.create(topic_node)
+		graph.create(Relationship(author_node,"talks_about",topic_node))
+		#file.write(template.format(name,topic.get(name))+"\n")'''
